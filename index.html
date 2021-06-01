@@ -1,0 +1,1268 @@
+<!DOCTYPE HTML>
+<!--
+	DataJournalism by Ilya Shafirov
+	Если вы украдете мой сайт, я обижусь
+-->
+<html>
+	<head>
+		<title>FootballClub Statistics</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" media="screen" href="assets/css/style.css">
+		<link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
+		
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	
+        <body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Wrapper -->
+					<div id="wrapper">
+
+                                            
+								
+                                               
+						<!-- Panel (Banner) -->
+							<section class="panel banner right">
+                                                            
+								<div class="content color0 span-3-75">
+									<div id="forparticles"><div id="particles-js"></div></div>
+									
+									<h1 class="major">Data Journalism project <br />
+									</h1>
+									<p>by  <strong>Iliya Shafirov</strong></p>
+									<ul class="actions">
+										<li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
+										<li><p style="padding-top: 20px">Look at the results</p></li>
+									</ul>
+									
+									
+								</div>
+                                                            
+								<div class="image filtered span-1-75" data-position="25% 25%">
+                                                                    <div class="span-10">
+                                                                        
+									
+									<img src="images/pic01.jpg" alt="" />
+                                                                    </div>
+                                                                </div>
+							</section>
+                                                
+
+						<!-- Panel (Spotlight) -->
+							<section class="panel spotlight medium right">
+								<div class="content span-10">
+									<h2 class="major" style="font-size: 1.5vw;">What was the purpose of this investigation?</h2>
+                                                                        <p>Football is undoubtedly the most popular sport in the world. The World Cup of 2014 could act as a perfect example of  such popularity. The event boasted a reach of 3.5 billion people, which is the highest of any sporting event that has ever occurred. From the financial point of view, an even more astounding fact can be observed: top 20 clubs in Europe generated a revenue of 7.9 billion dollars last season. Such an outrageous number has  obviously  sparked my interest and, as a result, has become a trigger for an investigation focused on the financial side of football. This article is going to look into the following topics:</p>
+                                                                         <ul id="listrevenue">
+                                                                             <li>Revenue of the top 5 leagues in Europe and concrete clubs</li>
+                                                                             <li>Operating expenses of concrete clubs</li>
+                                                                             <li>Primary sources of revenue</li>
+                                                                             <li>Effects of financial aspects of a team on its performance and vice versa</li>
+                                                                             
+                                                                         </ul>
+                                                                        
+                                                                        <div class="span-10">
+
+									</div>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="images/pic02.jpg" alt="" />
+								</div>
+								
+							</section>
+                                                <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">What are the top 3 leagues in European football and which league had the largest profit recorded last season?</h2>
+                                                                <p style="font-size: 0.83vw; width: 100%; color: #fff">The term “big three” in European football usually refers to the top three leagues in Europe: the Italian Serie A, the English Premier League and the Spanish La Liga. To begin with, it is necessary to present vital financial data about the top 5 leagues.  First and foremost, it is vital to look at the most important financial statistic – the profit/loss of the organization. We can see that Premier league recoded a massive profit of  683 million dollars last season with La Liga making 400 million and Serie A surprisingly ending up in the red.
+                                                                    </p> <p style="font-size: 0.83vw; width: 100%; color: #fff">As expected, the EPL with La Liga are two biggest  leagues in the world and have the largest profits.  The first one possesses a global reputation of being the toughest league in the world, which leads to a higher viewership because of the unexpected results. The latter one is the competition, which unites two of the biggest clubs in the world and still hosts  other great teams. Let us focus on the Serie A and try to figure out reasons behind financial struggles of the league. 
+</p>
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                         <div id="leaguechart_1"></div>
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/funs.jpg" alt="" />
+								</div>
+                                                    </section>
+                                                
+                                                 <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Why does the Serie A struggle?</h2>
+                                                            <p style="font-size: 1vw; width: 100%; color: #fff">The main issue  that the majority of clubs face in the Serie A is that they do not possess a renovated infrastructure(stadiums), which is going to attract tourists. This in turn causes a lack of outside investment into the clubs because without good infrastructure it becomes impossible to move mediocre clubs onto the global stage. Thus, clubs lose investment attractiveness.
+The reason for such an issue becomes clear, as the majority of stadiums in Italy are not owned by their respective clubs. Instead, they are a property of local councils, which fail to improve the quality of stadiums but still charge an annual payment.</p>
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                        
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/ligs/seriaa.png" alt="" />
+								</div>
+                                                    </section>
+                                                <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">What are the primary sources of revenue for domestic football competitions? </h2>
+                                                            <p style="font-size: 0.92vw; width: 100%; color: #fff">
+                                                              Roughly, all revenue streams can be classified into three categories: matchday revenue, broadcasting revenue and commercial revenue. 
+Let us take a look at what every channel really stands for: </p>
+                                                            
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                    <ul id="listrevenue3" style="font-size: 1vw; margin-top: 10%">
+                                                                <li>Matchday revenue is the number of money a league(made up by clubs)  makes from ticket sales</li>
+                                                                <li>Broadcasting revenue is the money that a league gains from TV stations that broadcast the competition live</li>
+                                                                <li>Commercial revenue stands for money made by kit sponsorships and merchandise</li>
+                                                        </ul>
+                                                        <div class="image filtered tinted" data-position="top left">
+                                                            
+									<img src="images/sources.jpg" alt="" />
+								</div>
+                                                    </section>
+                                                <section class="panel color4"  id="first">
+								<div class="intro joined">
+									<h2 class="major">How much pure revenue does every league generate?</h2>
+                                                                        <p>Firstly, let us look at the overall revenue before investigating what it is made up of. We can see that the EPL again dominates other leagues as far as revenue is concerned with 4.8 billion euros generated in the season of 15/16. La Liga comes in second with 2.4 billion euros. Lastly, the Serie A comes in third with 1.9 billion euros.</p>
+                                                                
+                                                                </div>
+								<div id="leaguechart"></div>
+                                                            
+							</section>
+                                                <section class="panel spotlight large left">
+								<div class="content span-5">
+									<h2 class="major">What are the primary sources of revenue for all of the three leagues and how do they differ proportionally? </h2>
+                                                                        <p style="font-size: 0.85vw; width: 100%">	
+                                                                           Let us now turn our attention towards revenue streams.  The diagram perfectly shows that  EPL and La Liga  have a very similar ratio of a  split between matchday, broadcasting and sponsorship with rougly 20%, 50% and 30% accordingly for each stream. On the other hand, Italian league has a split of 11%, 62% and 27%. The reason for it having a smaller revenue, which derives from matchday and  commercial sources was discussed above. Furthermore, it becomes difficult to judge these parameters as matchday revenue and commercial sources are not centralized under one league management and vary in different clubs.
+                                                                        
+                                                                        </p>
+								</div>
+                                                    
+                                                                <div id="leftclubs">
+                                                                        <div id="EnglandDonut"></div>
+                                                                        <img style=" width: 40%; margin: 20% 5% 0 5%;" src="images/ligs/eplball.png"/>
+                                                                </div> 
+                                                                <div id="leftclubs">
+                                                                        
+                                                                        <div id="SpainDonut"></div>
+                                                                        <img style=" width: 40%;  margin: 20% 5% 0 5%;" src="images/ligs/laligaball.png"/>
+                                                                </div> 
+                                                                <div id="leftclubs">
+                                                                       
+                                                                        <div id="ItalyDonut"></div>
+                                                                        <img style=" width: 40%;  margin: 20% 5% 0 5%;" src="images/ligs/seriaaball.png"/>
+                                                                </div> 
+                                                    <br>
+                                                   
+                                                    
+                                                    
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/pic03.jpg" alt="" />
+                                                                        
+
+								</div>
+							</section>
+                                                <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">How does the broadcasting revenue split differ in all three leagues?</h2>
+                                                            <p style="font-size: 0.86vw; width: 100%; color: #fff">
+                                                             First and foremost, we should point out some facts that can be seen from the diagram. Despite having a less overall revenue,  Italian league has an almost equal amount of money coming in from broadcasting  when compared to Spain. This fact can be explained by a higher domestic viewership. However, neither of these two  come close to the EPL, which still is a more popular league on the global stage. Nevertheless, some measures have been taken by La Liga to close the gap:   
+                                                            </p>
+                                                            
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                    <ul id="listrevenue" >
+                                                                <li>All of the broadcasting rights were centralized by La Liga,  so  that smaller and less popular clubs receive a more substantial payment</li>
+                                                                <li>The ratio between the highest and the lowest earning clubs in the Premier League was 1.61 to 1 compared to 3.8 for La Liga, but this ratio is projected to decrease over the next 3 to 5 years to around a 2.0 coefficient</li>
+                                                                <li>La Liga has implemented a new system, which almost completely duplicates the one of the EPL, where 50% of the total revenue is shared among all of the teams. The other 50% is spread out according to the league positions of clubs and resource generation ability of clubs in the competition
+                                                                </li>
+                                                                
+                                                                <p>Serie A uses a slightly different method compared to both leagues with 40% of the total amount equally distributed between the 20 clubs. Other 30% are spread out according to the club’s appeal in Italy and the final 30% are administered according to several factors, such as league positions in the final 5 years, league position last year and historical achievements. Even though both the Italian league and the Spanish league have recently introduced new systems, their TV broadcasting fees are still subpar compared to the EPL.</p>
+                                                        </ul>
+                                                    
+                                                        <div class="image filtered tinted" data-position="top left">
+                                                            
+									<img src="images/watchers.jpg" alt="" />
+								</div>
+                                                    </section>
+                                                
+                                                
+                                                <!-- Panel (Banner) -->
+<!--							<section class="panel banner right">
+                                                            
+								<div class="content color0 span-3-75">
+									
+									
+									<h1 class="major">Welcome to <br />
+									English Premiere League</h1>
+									
+									<ul class="actions">
+										<li><a href="#first" class="button special color1 circle icon fa-angle-right">Next</a></li>
+										<li><p style="padding-top: 20px">Ознакомиться с результатами</p></li>
+									</ul>
+									
+									
+								</div>
+								<div class="intro color1-alt">
+                                                                    <div class="span-1">
+                                                                        <a href="#first"><img id="clubs_big" src="images/epl.png"/></a>
+                                                                        <a href="#second"><img id="clubs" src="images/laliga.png"/></a>
+                                                                        <a href="#third"><img id="clubs" src="images/seriaA.png"/></a>
+                                                                    </div>
+                                                                   
+								</div>
+							</section>-->
+
+                                        					<!-- Panel -->
+							<section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">What are the trends among   revenues and expenses of EPL concrete clubs?</h2>
+                                                            <p style="font-size: 1vw; width: 100%; color: #fff">
+                                                        	Now our attention turns towards some concrete examples among clubs. As a sample for this investigation I have chosen 4 top English clubs: Arsenal, Manchester City, Manchester United and Liverpool. The most obvious trend that could be observed from the next two graphs is that both the revenue and  operating  costs of all of the clubs have increased. However, this growth was not permanent for all clubs with Manchester United dipping from 2013/14 season to 2014/15 season.
+                                                            </p>
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                        
+                                                        <div class="image filtered tinted" data-position="top left">
+                                                            <img src="images/ligs/epl.png"/>	
+								</div>
+                                                    </section>
+
+						<!-- Panel (Spotlight) -->
+                                                            <section class="panel spotlight large left">
+                                                                    <div class="content span-5">
+
+
+                                                                        <h2 class="major">Revenue of clubs</h2>
+                                                                                                                            <div id="chartdiv"></div>
+
+
+
+                                                                    </div>
+                                                                    <div class="image filtered tinted" data-position="top right">
+                                                                            <img src="images/pic03.jpg" alt="" />
+                                                                    </div>
+                                                            </section>
+						<!-- Panel (Spotlight) -->
+                                                            <section class="panel spotlight large left">
+                                                                    <div class="content span-5">
+
+
+                                                                    <h2 class="major">Operating expenses</h2>
+                                                                    <div id="chartdiv2"></div>
+
+
+
+                                                                    </div>
+                                                                    <div class="image filtered tinted" data-position="top right">
+                                                                            <img src="images/pic03.jpg" alt="" />
+                                                                    </div>
+                                                            </section>
+                                                <section class="panel">
+								<div class="intro color4">
+									<h2 class="major">Concrete revenue splits for 4 English clubs from <br> 2012/13 - 2016/17</h2>
+                                                                        <div id="forparticles"><div id="particles-js2"></div></div>
+								</div>
+                                                </section>
+                                                
+                                                
+                                                <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Arsenal</h2>
+                                                            <p style="font-size: 0.9vw; width: 120%; color: #fff">	Firstly, our glance falls on Arsenal, which is also known as a ‘football bank of England’. The slogan is there for a reason too as the club has the 2nd least operating expenses, but offers the highest ticket prices of all football clubs.  Furthermore, it should also be pointed out that Arsenal demonstrated a growth in matchday revenue because of a  new stadium, which is arguably  the most advanced in Europe. Last season, the revenue slumped due to poor performances. The whole ratio changed with more income coming in from commercial sources, as matchday profit suffered due to high ticket prices.</p>
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                        <div id="block-for-slider">
+                                                                <div id="viewport">
+                                                                    <ul id="slidewrapper">
+                                                                        <li class="slide"><div id="ArsenalDonut" class="slide-img"></div></li>
+                                                                        <li class="slide"><div id="ArsenalDonut_2" class="slide-img"></div></li>
+                                                                        <li class="slide"><div id="ArsenalDonut_3" class="slide-img"></div></li>
+                                                                        <li class="slide"><div id="ArsenalDonut_4" class="slide-img"></div></li>
+                                                                        <li class="slide"><div id="ArsenalDonut_5" class="slide-img"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns">
+                                                                        <div id="prev-btn">&lt;</div>
+                                                                        <div id="next-btn">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns">
+                                                                        <li class="slide-nav-btn"></li>
+                                                                        <li class="slide-nav-btn"></li>
+                                                                        <li class="slide-nav-btn"></li>
+                                                                        <li class="slide-nav-btn"></li>
+                                                                        <li class="slide-nav-btn"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/ars.png" alt="" />
+								</div>
+                                                    </section>
+                                                
+                                                
+                                                <section class="panel spotlight medium right">
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Liverpool</h2>
+                                                            <p style="font-size: 0.9vw; width: 120%; color: #fff">
+                                                            Liverpool  has seen a massive turn around in the last 5 years, as the club was financially demised because of poor  transfers.  Nevertheless, the organization is now projected to overtake Arsenal in revenue generation during 2017/18. Matchday revenue  has improved by 15 million as he new stand was built to hold a larger crowd in the stadium. 
+However, the really big change came all the way back in  2014/15, when famous and marketable players were playing at the club, which boosted the financial statistics of the club. Despite their departures, the organization managed to generate around 100 million pounds from transfers and  stay competitive.
+                                                            </p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                         <div id="block-for-slider2">
+                                                                <div id="viewport2">
+                                                                    <ul id="slidewrapper2">
+                                                                        <li class="slide2"><div id="LiverDonut" class="slide-img2"></div></li>
+                                                                        <li class="slide2"><div id="LiverDonut_2" class="slide-img2"></div></li>
+                                                                        <li class="slide2"><div id="LiverDonut_3" class="slide-img2"></div></li>
+                                                                        <li class="slide2"><div id="LiverDonut_4" class="slide-img2"></div></li>
+                                                                        <li class="slide2"><div id="LiverDonut_5" class="slide-img2"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns2">
+                                                                        <div id="prev-btn2">&lt;</div>
+                                                                        <div id="next-btn2">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns2">
+                                                                        <li class="slide-nav-btn2"></li>
+                                                                        <li class="slide-nav-btn2"></li>
+                                                                        <li class="slide-nav-btn2"></li>
+                                                                        <li class="slide-nav-btn2"></li>
+                                                                        <li class="slide-nav-btn2"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/liver.png" alt="" />
+								</div>
+                                                    </section>
+                                                
+                                                <section class="panel spotlight medium right">
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Manchester City</h2>
+                                                            <p style="font-size: 1vw; width: 120%; color: #fff">	Manchester City  has seen a drastic change over the last decade and a half. The club was bought by Sheikh Mansour bin Zayed al-Nahyan back in 2008. Back in 2012 Manchester City new owners invesed 930 million euros to turn the club around. However, money does not buy success. Thus, the new owners also made sure to hire qualified personnel from Barcelona(Soriano), coaches like Pep Guardiola and sporting directors like Txiki.
+                                                            </p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                         <div id="block-for-slider3">
+                                                                <div id="viewport3">
+                                                                    <ul id="slidewrapper3">
+                                                                        <li class="slide3"><div id="MCDonut" class="slide-img3"></div></li>
+                                                                        <li class="slide3"><div id="MCDonut_2" class="slide-img3"></div></li>
+                                                                        <li class="slide3"><div id="MCDonut_3" class="slide-img3"></div></li>
+                                                                        <li class="slide3"><div id="MCDonut_4" class="slide-img3"></div></li>
+                                                                        <li class="slide3"><div id="MCDonut_5" class="slide-img3"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns3">
+                                                                        <div id="prev-btn3">&lt;</div>
+                                                                        <div id="next-btn3">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns3">
+                                                                        <li class="slide-nav-btn3"></li>
+                                                                        <li class="slide-nav-btn3"></li>
+                                                                        <li class="slide-nav-btn3"></li>
+                                                                        <li class="slide-nav-btn3"></li>
+                                                                        <li class="slide-nav-btn3"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/mc.png" alt="" />
+								</div>
+                                                    </section>
+                                                <section class="panel spotlight medium right">
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Manchester United</h2>
+                                                            <p style="font-size: 1.1vw; width: 120%; color: #fff">
+                                                            Manchester United is historically known as the largest club in England. Nevertheless, the club has faced a lot of trouble over the past 5 years with the team conquering just one title. However, the revenue has not been affected by this fact with commercial revenue being 306 million, which almost doubled since 2012/2013, while other non-centralized  stream(matchday) fluctuated. This can be explained by amazing marketing team of the club, which pushed the brand of the club all around the world.
+                                                            </p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                         <div id="block-for-slider4">
+                                                                <div id="viewport4">
+                                                                    <ul id="slidewrapper4">
+                                                                        <li class="slide4"><div id="MUDonut" class="slide-img4"></div></li>
+                                                                        <li class="slide4"><div id="MUDonut_2" class="slide-img4"></div></li>
+                                                                        <li class="slide4"><div id="MUDonut_3" class="slide-img4"></div></li>
+                                                                        <li class="slide4"><div id="MUDonut_4" class="slide-img4"></div></li>
+                                                                        <li class="slide4"><div id="MUDonut_5" class="slide-img4"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns4">
+                                                                        <div id="prev-btn4">&lt;</div>
+                                                                        <div id="next-btn4">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns4">
+                                                                        <li class="slide-nav-btn4"></li>
+                                                                        <li class="slide-nav-btn4"></li>
+                                                                        <li class="slide-nav-btn4"></li>
+                                                                        <li class="slide-nav-btn4"></li>
+                                                                        <li class="slide-nav-btn4"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/MU.png" alt="" />
+								</div>
+                                                    </section>
+						
+
+						<!-- Panel -->
+							
+
+						
+<!--                                        </div>
+			</div>
+                  
+                
+                
+                
+                НОВАЯ ЛИГА
+                <div id="page-wrapper">
+                    <div id="wrapper2"> -->
+					
+					<!-- Panel (Banner) -->
+<!--							<section class="panel banner right">
+                                                            
+								<div class="content color0 span-3-75">
+									
+									
+									<h1 class="major">Welcome to <br />
+									LaLiga</h1>
+									<p>This is <strong>DataJournalism</strong> WEB-page. It’s fully responsive and here you can look at some of research data.</p>
+									<ul class="actions">
+										<li><a href="#second" class="button special color1 circle icon fa-angle-right">Next</a></li>
+										<li><p style="padding-top: 20px">Ознакомиться с результатами</p></li>
+									</ul>
+									
+									
+								</div>
+								<div class="intro color1">
+                                                                    <div class="span-1">
+                                                                        <a href="#first"><img id="clubs" src="images/epl.png"/></a>
+                                                                        <a href="#second"><img id="clubs_big" src="images/laliga.png"/></a>
+                                                                        <a href="#third"><img id="clubs" src="images/seriaA.png"/></a>
+                                                                    </div>
+                                                                   
+								</div>
+							</section>-->
+
+<section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">La Liga</h2>
+                                                            <p style="font-size: 1vw; width: 100%; color: #fff">
+                                                        
+                                                                	La Liga is, unfortunately, a very unbalanced league with 3 large top clubs that make the top 20 largest clubs. However, the rest of the league struggles and finding any concrete and reliable information about other clubs presented a massive challenge. Thus, our sample was limited to just three clubs: Athletico Madrid, Real Madrid and Barcelona.
+	All of the presented clubs are run by the socis(members of the club), who select the president and board members. It is obvious that with this system there is no real ‘owner’ that invests resources into the club. This fact makes the picture clear: most of the times clubs will have to increase their operating expenses in order to maximize their profits. This can be seen from both diagrams.
+                                                            </p>
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                        
+                                                        <div class="image filtered tinted" data-position="top left">
+                                                            <img src="images/ligs/laliga.png"/>	
+								</div>
+                                                    </section>
+                                        <section class="panel spotlight large left">
+                                                                    <div class="content span-5">
+
+
+                                                                        <h2 class="major">Revenue of clubs</h2>
+                                                                          <div id="chartdiv3"></div>
+
+
+
+                                                                    </div>
+                                                                    <div class="image filtered tinted" data-position="top right">
+                                                                            <img src="images/pic03.jpg" alt="" />
+                                                                    </div>
+                                                            </section>
+						<!-- Panel (Spotlight) -->
+                                                            <section class="panel spotlight large left">
+                                                                    <div class="content span-5">
+
+
+                                                                    <h2 class="major">Operating expenses</h2>
+                                                                    <div id="chartdiv4"></div>
+
+
+
+                                                                    </div>
+                                                                    <div class="image filtered tinted" data-position="top right">
+                                                                            <img src="images/pic03.jpg" alt="" />
+                                                                    </div>
+                                                            </section>
+                                                <section class="panel">
+								<div class="intro color4">
+									<h2 class="major">Concrete revenue splits for 4 Spanish clubs from <br> 2012/13 - 2016/17</h2>
+                                                                        <div id="forparticles"><div id="particles-js3"></div></div>
+								</div>
+                                                </section>
+                                                
+                                                <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Barcelona</h2>
+                                                            <p style="font-size: 0.9vw; width: 120%; color: #fff">
+                                                        	Barcelona was without a shadow of a doubt a unique club.  It was considered a place famous for developing youth talent, and a club that was never focused on becoming  the biggest brand in the world. Nevertheless, with the rise of other global brands, the club is now forced to adapt. The board have set a target to hit 1 billion dollars of revenue. At the moment, the world wide brand of the club is hitting its peak with merchandise ranging from bottles of wine to shirts. That is why the commercial stream has boomed over the period. Furthermore, the stadium has become a tourist attraction(the city of Barcelona hosts 30 million tourists per year) with matchday revenue also growing steadily.
+                                                            </p>
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                        <div id="block-for-slider9">
+                                                                <div id="viewport9">
+                                                                    <ul id="slidewrapper9">
+                                                                        <li class="slide9"><div id="BarcelonaDonut" class="slide-img9"></div></li>
+                                                                        <li class="slide9"><div id="BarcelonaDonut_2" class="slide-img9"></div></li>
+                                                                        <li class="slide9"><div id="BarcelonaDonut_3" class="slide-img9"></div></li>
+                                                                        <li class="slide9"><div id="BarcelonaDonut_4" class="slide-img9"></div></li>
+                                                                        <li class="slide9"><div id="BarcelonaDonut_5" class="slide-img9"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns9">
+                                                                        <div id="prev-btn9">&lt;</div>
+                                                                        <div id="next-btn9">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns9">
+                                                                        <li class="slide-nav-btn9"></li>
+                                                                        <li class="slide-nav-btn9"></li>
+                                                                        <li class="slide-nav-btn9"></li>
+                                                                        <li class="slide-nav-btn9"></li>
+                                                                        <li class="slide-nav-btn9"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/fcb.png" alt="" />
+								</div>
+                                                    </section>
+                                                <section class="panel spotlight medium right">
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Real Madrid</h2>
+                                                            <p style="font-size: 0.9vw; width: 120%; color: #fff">
+                                                        	Real Madrid was the first super brand club. With its policy of signing marquee signings,  Madrid gained fan base from all around the world, as best players were united under one brand. The club always maintained financial stability over the period of its existence. It is the only Spanish club that has ever successfully received an income of 301 million euros from commercial sources. What is more, the club plans to build a new stadium without increasing its debt, completely relying on sponsorships and revenue.
+                                                            </p>
+                                                        
+                                                        </div>
+                                                       
+                                                    </div>
+                                                         <div id="block-for-slider10">
+                                                                <div id="viewport10">
+                                                                    <ul id="slidewrapper10">
+                                                                        <li class="slide10"><div id="RealDonut" class="slide-img10"></div></li>
+                                                                        <li class="slide10"><div id="RealDonut_2" class="slide-img10"></div></li>
+                                                                        <li class="slide10"><div id="RealDonut_3" class="slide-img10"></div></li>
+                                                                        <li class="slide10"><div id="RealDonut_4" class="slide-img10"></div></li>
+                                                                        <li class="slide10"><div id="RealDonut_5" class="slide-img10"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns10">
+                                                                        <div id="prev-btn10">&lt;</div>
+                                                                        <div id="next-btn10">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns10">
+                                                                        <li class="slide-nav-btn10"></li>
+                                                                        <li class="slide-nav-btn10"></li>
+                                                                        <li class="slide-nav-btn10"></li>
+                                                                        <li class="slide-nav-btn10"></li>
+                                                                        <li class="slide-nav-btn10"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/real.png" alt="" />
+								</div>
+                                                    </section>
+                                                
+                                                <section class="panel spotlight medium right">
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Athletico Madrid</h2>
+                                                            <p style="font-size: 1vw; width: 120%; color: #fff">
+                                                        	Athletico Madrid have only recently become a large club, but they already possess the 13th highest revenue in Europe and have been named by Marca ‘the most economically efficient club’. The club doubled their revenue, but operating expenses have almost tripled. 
+                                                                <br>
+                                                                	An area for improvement could be commercial revenue, as it is nearly 4 times smaller than Barcelona’s. On the other hand, matchday revenue will surely skyrocket in 2018 with the new stadium, which is going to attract a lot of tourists.
+                                                        
+                                                            </p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                         <div id="block-for-slider11">
+                                                                <div id="viewport11">
+                                                                    <ul id="slidewrapper11">
+                                                                        <li class="slide11"><div id="AthleticoDonut" class="slide-img11"></div></li>
+                                                                        <li class="slide11"><div id="AthleticoDonut_2" class="slide-img11"></div></li>
+                                                                        <li class="slide11"><div id="AthleticoDonut_3" class="slide-img11"></div></li>
+                                                                        <li class="slide11"><div id="AthleticoDonut_4" class="slide-img11"></div></li>
+                                                                        <li class="slide11"><div id="AthleticoDonut_5" class="slide-img11"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns11">
+                                                                        <div id="prev-btn11">&lt;</div>
+                                                                        <div id="next-btn11">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns11">
+                                                                        <li class="slide-nav-btn11"></li>
+                                                                        <li class="slide-nav-btn11"></li>
+                                                                        <li class="slide-nav-btn11"></li>
+                                                                        <li class="slide-nav-btn11"></li>
+                                                                        <li class="slide-nav-btn11"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/athl.png" alt="" />
+								</div>
+                                                    </section>
+                                                
+<!--							
+					</div>
+				</div>
+                        
+                        
+                        <div id="page-wrapper3">
+
+				 Wrapper 
+					<div id="wrapper3">-->
+					
+					<!-- Panel (Banner) -->
+<!--							<section class="panel banner right">
+                                                            
+								<div class="content color0 span-3-75">
+									
+									
+									<h1 class="major">Welcome to<br />
+									Serie A</h1>
+									<p>This is <strong>DataJournalism</strong> WEB-page. It’s fully responsive and here you can look at some of research data.</p>
+									<ul class="actions">
+										<li><a href="#third" class="button special color1 circle icon fa-angle-right">Next</a></li>
+										<li><p style="padding-top: 20px">Ознакомиться с результатами</p></li>
+									</ul>
+									
+									
+								</div>
+								<div class="intro color4">
+                                                                    <div class="span-1">
+                                                                        <a href="#first"><img id="clubs" src="images/epl.png"/></a>
+                                                                        <a href="#second"><img id="clubs" src="images/laliga.png"/></a>
+                                                                        <a href="#third"><img id="clubs_big" src="images/seriaA.png"/></a>
+                                                                    </div>
+                                                                   
+								</div>
+							</section>-->
+
+ <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">What are the trends among revenues and expenses of Serie A concrete clubs?</h2>
+                                                            <p style="font-size: 1vw; width: 100%; color: #fff">
+                                                                Serie A is by far the least financially stable league among the top 3. We can see that revenue of all clubs other than Juventus is miserable compared to the majority of clubs in other leagues. Furthermore,  it has one сlub( AC Milan), which has decreased in revenue generated over the 5 years despite all other top clubs in the investigation improving their turnover.
+                                                            </p></div>
+                                                                                                                 
+                                                    </div>
+                                                        
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/ligs/seriaa.png" alt="" />
+								</div>
+                                                    </section>
+                                        <section class="panel spotlight large left">
+                                                                    <div class="content span-5">
+
+
+                                                                        <h2 class="major">Revenue of clubs</h2>
+                                                                          <div id="chartdiv5"></div>
+
+
+
+                                                                    </div>
+                                                                    <div class="image filtered tinted" data-position="top right">
+                                                                            <img src="images/pic03.jpg" alt="" />
+                                                                    </div>
+                                                            </section>
+						<!-- Panel (Spotlight) -->
+                                                            <section class="panel spotlight large left">
+                                                                    <div class="content span-5">
+
+
+                                                                    <h2 class="major">Operating expenses</h2>
+                                                                    <div id="chartdiv6"></div>
+
+
+
+                                                                    </div>
+                                                                    <div class="image filtered tinted" data-position="top right">
+                                                                            <img src="images/pic03.jpg" alt="" />
+                                                                    </div>
+                                                            </section>
+                                                <section class="panel">
+								<div class="intro color4">
+									<h2 class="major">Concrete revenue splits for 4 Italian clubs from <br> 2012/13 - 2016/17</h2>
+                                                                        <div id="forparticles"><div id="particles-js4"></div></div>
+								</div>
+                                                </section>
+                                                
+                                                <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Milan</h2>
+                                                            <p style="font-size: 0.9vw; width: 120%; color: #fff">
+                                                        Over the 90s AC Milan was knows as the greatest football club in the world. Its dominance in Europe continued at the beginning of the 20th century. However, after that the club was unable to adapt to global marketing with it picking up steam only after 2015/2016. Also, several questionable transfers were made that left the club at a squad value disadvantage. The club shares San Siro stadium with Inter, but with poor performances matchday revenue growth was not as high as expected by analysts. This lead to an eventual board takeover by Chinese owners in the summer of 2017.
+                                                            </p>
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                        <div id="block-for-slider5">
+                                                                <div id="viewport5">
+                                                                    <ul id="slidewrapper5">
+                                                                        <li class="slide5"><div id="MilanDonut" class="slide-img5"></div></li>
+                                                                        <li class="slide5"><div id="MilanDonut_2" class="slide-img5"></div></li>
+                                                                        <li class="slide5"><div id="MilanDonut_3" class="slide-img5"></div></li>
+                                                                        <li class="slide5"><div id="MilanDonut_4" class="slide-img5"></div></li>
+                                                                        <li class="slide5"><div id="MilanDonut_5" class="slide-img5"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns5">
+                                                                        <div id="prev-btn5">&lt;</div>
+                                                                        <div id="next-btn5">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns5">
+                                                                        <li class="slide-nav-btn5"></li>
+                                                                        <li class="slide-nav-btn5"></li>
+                                                                        <li class="slide-nav-btn5"></li>
+                                                                        <li class="slide-nav-btn5"></li>
+                                                                        <li class="slide-nav-btn5"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/milan.png" alt="" />
+								</div>
+                                                    </section>
+                                                <section class="panel spotlight medium right">
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Juventus</h2>
+                                                            <p style="font-size: 0.9vw; width: 120%; color: #fff">
+                                                        	Juventus is considered a dominant force in Serie A both from the sporting and financial perspectives. After masterfully constructing a new stadium in 2011, matchday profit grows year after year. Furthermore, domestic broadcasting revenue stream is also massive for Juventus as they finish first majority of the seasons in the Serie A(read Serie A money distribution between clubs from broadcasting ).  Lastly, the commercial stream value almost doubled due to club finding a new main sponsor.
+                                                            </p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                         <div id="block-for-slider6">
+                                                                <div id="viewport6">
+                                                                    <ul id="slidewrapper6">
+                                                                        <li class="slide6"><div id="JuventusDonut" class="slide-img6"></div></li>
+                                                                        <li class="slide6"><div id="JuventusDonut_2" class="slide-img6"></div></li>
+                                                                        <li class="slide6"><div id="JuventusDonut_3" class="slide-img6"></div></li>
+                                                                        <li class="slide6"><div id="JuventusDonut_4" class="slide-img6"></div></li>
+                                                                        <li class="slide6"><div id="JuventusDonut_5" class="slide-img6"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns6">
+                                                                        <div id="prev-btn6">&lt;</div>
+                                                                        <div id="next-btn6">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns6">
+                                                                        <li class="slide-nav-btn6"></li>
+                                                                        <li class="slide-nav-btn6"></li>
+                                                                        <li class="slide-nav-btn6"></li>
+                                                                        <li class="slide-nav-btn6"></li>
+                                                                        <li class="slide-nav-btn6"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/juventus.png" alt="" />
+								</div>
+                                                    </section>
+                                                
+                                                <section class="panel spotlight medium right">
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Inter</h2>
+                                                            <p style="font-size: 1vw; width: 120%; color: #fff">
+                                                        After the 2009/2010 season when Inter won the UCL, everyone believed that the club will go on to dominate Europe and the Serie A for years to come. However, it did not turn out that way  with several poor transfers and Juventus dominating the Italian football scene. However, the club managed find a new sponsor last season, which doubled commercial revenue. What is more, the club manages to increase matchday revenue despite sharing a stadium with one of the most historically famous clubs in Italy, which is a phenomenal feat.
+                                                            </p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                         <div id="block-for-slider7">
+                                                                <div id="viewport7">
+                                                                    <ul id="slidewrapper7">
+                                                                        <li class="slide7"><div id="InterDonut" class="slide-img7"></div></li>
+                                                                        <li class="slide7"><div id="InterDonut_2" class="slide-img7"></div></li>
+                                                                        <li class="slide7"><div id="InterDonut_3" class="slide-img7"></div></li>
+                                                                        <li class="slide7"><div id="InterDonut_4" class="slide-img7"></div></li>
+                                                                        <li class="slide7"><div id="InterDonut_5" class="slide-img7"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns7">
+                                                                        <div id="prev-btn7">&lt;</div>
+                                                                        <div id="next-btn7">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns7">
+                                                                        <li class="slide-nav-btn7"></li>
+                                                                        <li class="slide-nav-btn7"></li>
+                                                                        <li class="slide-nav-btn7"></li>
+                                                                        <li class="slide-nav-btn7"></li>
+                                                                        <li class="slide-nav-btn7"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/inter.png" alt="" />
+								</div>
+                                                    </section>
+                                                <section class="panel spotlight medium right">
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Roma</h2>
+                                                            <p style="font-size: 1vw; width: 120%; color: #fff">
+                                                        Roma is arguably the second largest club in the Serie A, but their balance sheet does not seem as good as their football performances with around 40 million loss in 2015. Also, the club is forced to reconstruct their stadium at the end of 2018 to turn the negative trend of decreasing matchday revenue. Lastly, the club is moving on from its current sponsor in search of a more lucrative deal in order to increase commercial revenue.
+                                                            </p>
+                                                        </div>
+                                                       
+                                                    </div>
+                                                         <div id="block-for-slider8">
+                                                                <div id="viewport8">
+                                                                    <ul id="slidewrapper8">
+                                                                        <li class="slide8"><div id="RomaDonut" class="slide-img8"></div></li>
+                                                                        <li class="slide8"><div id="RomaDonut_2" class="slide-img8"></div></li>
+                                                                        <li class="slide8"><div id="RomaDonut_3" class="slide-img8"></div></li>
+                                                                        <li class="slide8"><div id="RomaDonut_4" class="slide-img8"></div></li>
+                                                                        <li class="slide8"><div id="RomaDonut_5" class="slide-img8"></div></li>
+                                                                    </ul>
+
+                                                                    <div id="prev-next-btns8">
+                                                                        <div id="prev-btn8">&lt;</div>
+                                                                        <div id="next-btn8">&gt;</div>
+                                                                    </div>
+
+                                                                    <ul id="nav-btns8">
+                                                                        <li class="slide-nav-btn8"></li>
+                                                                        <li class="slide-nav-btn8"></li>
+                                                                        <li class="slide-nav-btn8"></li>
+                                                                        <li class="slide-nav-btn8"></li>
+                                                                        <li class="slide-nav-btn8"></li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                            
+                                                        <div class="image filtered tinted" data-position="top left">
+									<img src="images/teams/roma.png" alt="" />
+								</div>
+                                                    </section>
+                                                
+                                                
+                                                <section class="panel spotlight medium right">
+								<div class="content span-10">
+									<h2 class="major" style="font-size: 1.5vw;">How do financial results affect performances of a team?</h2>
+                                                                        	<p style="font-size: 0.85vw;">It is a very interesting question, as a lot of regular fans and people are interested to find out just how closely linked are the financial success of a club and the sporting success of the club. In order to find out and demonstrate the results we will do the following:
+                                                                                </p> <ul id="listrevenue2" >
+                                                                            <li>Calculate the Pirson’s correlation coefficient between points and squad value, points and payroll for all off the clubs in three leagues</li>
+                                                                            <li>Interpret the results</li>
+                                                                            <li>Represent all three leagues on a scater plot</li>
+                                                                            
+                                                                        </ul>
+                                                                            
+                                                                          <p style="font-size: 0.85vw;"> However, with that comes a second question: how do you judge sporting success and financial success? Well, since we are only looking into the league success at the moment, it would be wise to measure sporting success using points gained in a league season. Also, to judge financial success of a club, it would be beneficial to use payroll of a first team squad and the squad value of a first team squad.
+The results demonstrate that the correlation coefficient for La Liga equals 0.791 and  0.794 accordingly,  for Serie A it is 0.834 and 0.776,  0.858  and 0.93 for the EPL. 
+It is important to point out that a higher coefficient value means a closer correlation. The coefficient value from -1(indirect correlation) to 1(full direct correlation).  Thus, we can see that a higher payroll and higher squad value almost certainly relate in a better league position. It is the most certain for EPL(highest coefficient) and least certain for La Liga. Still 0.7 value is very high and certainly means that a correlation exists. 
+                                                                       </p> 
+                                                                        
+                                                                        <div class="span-10">
+
+									</div>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="images/pic03.jpg" alt="" />
+								</div>
+								
+							</section>
+                                                <section class="panel spotlight large left">
+								<div class="content span-5">
+																	
+	
+                                                                    <h2 class="major">Scatter plot</h2>
+                                                                     <div id="correlcontainer" style="height: 500px"></div>                                                   
+                                                                    				
+																	
+																	
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/pic03.jpg" alt="" />
+								</div>
+							</section>
+                                                
+                                                <section class="panel spotlight large left">
+								<div class="content span-5">
+																	
+	
+                                                                    <h2 class="major">Scatter plot</h2>
+                                                                     <div id="correlcontainer2" style="height: 500px"></div>                                                   
+                                                                    				
+																	
+																	
+								</div>
+								<div class="image filtered tinted" data-position="top right">
+									<img src="images/pic03.jpg" alt="" />
+								</div>
+							</section>
+                                                
+                                                <section class="panel color4-alt">
+								<div class="intro color4">
+									<h2 class="major">Contacts</h2>
+									<p>Here you can see my contacts to communicate with me.</p>
+								</div>
+								<div class="inner columns divided">
+
+									<div class="span-1-5">
+										<ul class="contact-icons color1">
+											<li class="icon fa-phone"><a href="tel:+79381244743">+79381244743</a></li>
+											
+											<li class="icon fa-paper-plane"><a href="tg://msg?text=<?php echo urlencode( '<TEXT>' ); ?>&to=<+79381244743>">Telegram</a></li>
+											
+                                                                                        <li class="icon fa-whatsapp"><a href="whatsapp://send?phone=79381244743">+79381244743</a></li>
+                                                                                        <li class="icon fa-at"><a href="mailto:shafirov1999@gmail.com">shafirov1999@gmail.com</a></li>
+										</ul>
+									</div>
+								</div>
+							</section>
+                                               	
+                                               <section class="panel spotlight medium right">
+								<div class="content span-10">
+									<h2 class="major" style="font-size: 1.5vw;">Conclusion</h2>
+                                                                        <p style="font-size: 1.2fcovw;">
+                                                                            	To conclude, this investigation has presented an overview of some basic ways football clubs function in the world. Firstly, we have investigated profits/ losses of whole leagues and looked at their revenues. Secondly, we have looked at ways clubs and leagues make money. Furthermore, we moved on to interpret all of the revenue streams. Thirdly, we looked at concrete football clubs. We tried to interpret their financial statistics using background knowledge. Last but not least, we provided a correlation analysis between financial statistics and sporting success.
+                                                                                <br>
+                                                                                
+                                                                            
+                                                                        </p>	There could be lots of ways to continue this research. One could go deeper into building a model for squad evaluation instead of relying on outside information. Furthermore, an analysis could also use a new metric whatsoever that will both look at the revenue and squad value of the team. Also, correlation analysis could be improved to interpret hypothesis testing.
+                                                                        <br><br>
+                                                                        <a href="https://drive.google.com/uc?export=download&id=1uT7Y74MObLs_RO5Za9aoTRhg4z7B0Kyh">Download the resources</a>
+                                                                        
+                                                                        <div class="span-10">
+
+									</div>
+								</div>
+								<div class="image filtered tinted" data-position="top left">
+									<img src="images/pic02.jpg" alt="" />
+								</div>
+								
+							</section>
+                                                
+                                                <section class="panel spotlight medium right">
+                                                    
+                                                    <div class="content span-7">
+                                                        <div class="intro joined">
+                                                            <h2 class="major" style="font-size: 1.5vw;">Sources</h2>
+                                                            
+                                                            
+                                                        </div>
+                                                                                                                 
+                                                    </div>
+                                                    <ul id="listrevenue" style="font-size: 1.2vw">
+                                                                        <li><a href="https://www.forbes.com/sites/mikeozanian/2017/06/06/the-worlds-most-valuable-soccer-teams-2017/#56c1bb8577ea">www.forbes.com</a></li>
+                                                                        <li><a href="https://www.theguardian.com/football/2017/jun/01/premier-league-finances-club-by-club">www.theguardian.com</a></li>
+                                                                        <li><a href="https://www2.deloitte.com/content/dam/Deloitte/global/Documents/Consumer-Business/gx-consumer-business-sport-football-money-league-2017.pdf">www2.deloitte.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/621705/europe-aggregated-total-revenue-of-top-division-football-clubs">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/723363/revenue-distribution-of-football-clubs-belgium/">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/723347/revenue-distribution-of-football-clubs-france/">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/723344/revenue-distribution-of-football-clubs-spain/">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/723345/revenue-distribution-of-football-clubs-italy/">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/723343/revenue-distribution-of-football-clubs-germany/">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/556893/premier-league-clubs-revenue-by-stream/">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/675528/average-ligue-1-salary-by-team/">www.statista.com</a></li>
+                                                                        <li><a href="https://github.com/le0npy/le0npy.github.io">www.github.com</a></li>
+                                                        </ul>
+                                                    <ul id="listrevenue" style="font-size: 1.2vw">
+                                                                        <li><a href="https://www.statista.com/statistics/675490/average-bundesliga-salary-by-team/">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/675461/average-la-liga-salary-by-team/">www.statista.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/675470/average-serie-a-salary-by-team/">www.statista.com</a></li>
+                                                                        <li><a href="http://www.totalsportek.com/money/footballers-with-highest-salary/">www.totalsportek.com</a></li>
+                                                                        <li><a href="https://www.uefa.com/memberassociations/uefarankings/club/index.html">www.uefa.com</a></li>
+                                                                        <li><a href="https://www.forbes.com/sites/chrissmith/2016/05/11/the-most-valuable-sponsorship-deals-in-soccer/#a43701559e0e">www.forbes.com</a></li>
+                                                                        <li><a href="http://www.uefa.com/community/news/newsid=2064391.html">www.uefa.com</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/723243/transfer-proceeds-revenues-of-football-clubs-europe/">www.statista.com</a></li>
+                                                                        <li><a href="http://www.mirror.co.uk/sport/football/news/how-much-each-premier-league-11285539">www.mirror.co.uk</a></li>
+                                                                        <li><a href="http://www.ecaeurope.com/Research/ECA%20Report%20on%20Youth%20Academies/ECA%20Report%20on%20Youth%20Academies.pdf">www.ecaeurope.com</a></li>
+                                                                        <li><a href="http://www.bbc.co.uk/sport/football/35545999">www.bbc.co.uk</a></li>
+                                                                        <li><a href="https://www.statista.com/statistics/328644/premier-league-teams-ranked-by-most-expensive-ticket-price/">www.statista.com</a></li>
+                                                                             
+                                                    
+                                                    
+                                                    </ul>
+                                                        <div class="image filtered tinted" data-position="top left">
+                                                            
+									<img src="images/research.jpg" alt="" />
+								</div>
+                                                    </section>
+					</div>
+				</div>
+					
+					
+			
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/main2.js"></script>
+			<script src="assets/js/main3.js"></script>
+			
+		<!-- Scripts for particles-->
+			<script src="assets/js/particles/particles.js"></script>
+                        <script src="assets/js/particles/particles2.js"></script>
+                        <script src="assets/js/particles/particles3.js"></script>
+                        <script src="assets/js/particles/particles4.js"></script>
+                        <script src="assets/js/particles/app.js"></script>
+                        <script src="assets/js/particles/app2.js"></script>
+                        <script src="assets/js/particles/app3.js"></script>
+                        <script src="assets/js/particles/app4.js"></script>
+
+		<!-- stats.js -->
+		<script src="assets/js/stats.js"></script>
+		
+		
+		
+		<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+
+      // Load the Visualization API and the corechart package.
+      google.charts.load('current', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.charts.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+        // Create the data table.
+        var data = new google.visualization.DataTable();
+        data.addColumn('string', 'Topping');
+        data.addColumn('number', 'Slices');
+        data.addRows([
+          ['Mushrooms', 3],
+          ['Onions', 1],
+          ['Olives', 1],
+          ['Zucchini', 1],
+          ['Pepperoni', 2]
+        ]);
+
+        // Set chart options
+        var options = {'title':'How Much Pizza I Ate Last Night',
+                       'width':400,
+                       'height':300};
+
+        // Instantiate and draw our chart, passing in some options.
+        var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+      }
+    </script>
+	
+    
+    
+    
+    
+    
+    
+    
+<!-- библиотеки -->
+<script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
+<script src="https://www.amcharts.com/lib/3/serial.js"></script>
+<script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/highcharts-more.js"></script>
+<script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+<script src="https://www.amcharts.com/lib/3/themes/none.js"></script>  
+
+<!-- slider -->
+<script type="text/javascript" src="assets/js/sliders/EPL/ArsenalSlider.js"></script>
+<script type="text/javascript" src="assets/js/sliders/EPL/LiverSlider.js"></script>
+<script type="text/javascript" src="assets/js/sliders/EPL/MCSlider.js"></script>
+<script type="text/javascript" src="assets/js/sliders/EPL/MUSlider.js"></script>
+
+<script type="text/javascript" src="assets/js/sliders/SeriaA/InterSlider.js"></script>
+<script type="text/javascript" src="assets/js/sliders/SeriaA/JuventusSlider.js"></script>
+<script type="text/javascript" src="assets/js/sliders/SeriaA/MilanSlider.js"></script>
+<script type="text/javascript" src="assets/js/sliders/SeriaA/RomaSlider.js"></script>
+
+<script type="text/javascript" src="assets/js/sliders/LaLiga/BarcelonaSlider.js"></script>
+<script type="text/javascript" src="assets/js/sliders/LaLiga/RealSlider.js"></script>
+<script type="text/javascript" src="assets/js/sliders/LaLiga/AthleticoSlider.js"></script>
+
+
+<!--графики доходов и графики расходов-->
+<script type="text/javascript" src="assets/js/graphs/DohodGraph.js"></script> 
+<script type="text/javascript" src="assets/js/graphs/RashodGraph.js"></script> 
+<script type="text/javascript" src="assets/js/graphs/DohodGraph2.js"></script> 
+<script type="text/javascript" src="assets/js/graphs/RashodGraph2.js"></script> 
+<script type="text/javascript" src="assets/js/graphs/DohodGraph3.js"></script> 
+<script type="text/javascript" src="assets/js/graphs/RashodGraph3.js"></script> 
+
+
+<!--сравнение лиг-->
+<script type="text/javascript" src="assets/js/leaguesChart/leagueChart.js"></script>        
+<script type="text/javascript" src="assets/js/leaguesChart/leagueChart_1.js"></script>                                                                                                                                            
+
+
+                                                                                                                                              
+                                                                                                                                                
+                                                                                                                                                
+                                                                                                                                                
+<!--пончик-->
+
+
+
+<script type="text/javascript" src="assets/js/donuts/EPL/ArsenalDonut.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/ArsenalDonut_2.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/ArsenalDonut_3.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/ArsenalDonut_4.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/ArsenalDonut_5.js"></script> 
+
+
+<script type="text/javascript" src="assets/js/donuts/EPL/LiverDonut.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/LiverDonut_2.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/LiverDonut_3.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/LiverDonut_4.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/LiverDonut_5.js"></script> 
+
+
+<script type="text/javascript" src="assets/js/donuts/EPL/MCDonut.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/MCDonut_2.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/MCDonut_3.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/MCDonut_4.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/MCDonut_5.js"></script> 
+
+
+<script type="text/javascript" src="assets/js/donuts/EPL/MUDonut.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/MUDonut_2.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/MUDonut_3.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/MUDonut_4.js"></script> 
+<script type="text/javascript" src="assets/js/donuts/EPL/MUDonut_5.js"></script> 
+
+
+<script type="text/javascript" src="assets/js/donuts/SeriaA/InterDonut.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/InterDonut_2.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/InterDonut_3.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/InterDonut_4.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/InterDonut_5.js"></script>
+
+<script type="text/javascript" src="assets/js/donuts/SeriaA/JuventusDonut.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/JuventusDonut_2.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/JuventusDonut_3.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/JuventusDonut_4.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/JuventusDonut_5.js"></script>
+
+<script type="text/javascript" src="assets/js/donuts/SeriaA/MilanDonut.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/MilanDonut_2.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/MilanDonut_3.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/MilanDonut_4.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/MilanDonut_5.js"></script>
+
+<script type="text/javascript" src="assets/js/donuts/SeriaA/RomaDonut.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/RomaDonut_2.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/RomaDonut_3.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/RomaDonut_4.js"></script>
+<script type="text/javascript" src="assets/js/donuts/SeriaA/RomaDonut_5.js"></script>
+
+
+<script type="text/javascript" src="assets/js/donuts/LaLiga/BarcelonaDonut.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/BarcelonaDonut_2.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/BarcelonaDonut_3.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/BarcelonaDonut_4.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/BarcelonaDonut_5.js"></script>
+
+
+
+<script type="text/javascript" src="assets/js/donuts/LaLiga/RealDonut.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/RealDonut_2.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/RealDonut_3.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/RealDonut_4.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/RealDonut_5.js"></script>
+
+
+<script type="text/javascript" src="assets/js/donuts/LaLiga/AthleticoDonut.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/AthleticoDonut_2.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/AthleticoDonut_3.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/AthleticoDonut_4.js"></script>
+<script type="text/javascript" src="assets/js/donuts/LaLiga/AthleticoDonut_5.js"></script>
+
+
+<script type="text/javascript" src="assets/js/donuts//leagues/England.js"></script> 
+<script type="text/javascript" src="assets/js/donuts//leagues/Italy.js"></script> 
+<script type="text/javascript" src="assets/js/donuts//leagues/Spain.js"></script> 
+<script type="text/javascript" src="assets/js/donuts//leagues/Germany.js"></script> 
+
+
+<!--корреляция-->
+<script type="text/javascript" src="assets/js/correlationAnalysises//correlation1.js"></script> 
+<script type="text/javascript" src="assets/js/correlationAnalysises//correlation2.js"></script> 
+<script src="https://code.highcharts.com/highcharts-3d.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<script src="https://code.highcharts.com/highcharts.js"></script>
+
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    
+
+
+
+	</body>
+</html>

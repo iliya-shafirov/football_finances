@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<!-- saved from url=(0063)https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica -->
+<html class=" js svg"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		  <!--<base href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica">--><base href=".">
+  
+  <meta name="keywords" content="highcharts, charts, javascript charts, ajax charts, plots, line charts, bar charts, pie charts, javascript plots, ajax plots">
+  <meta name="description" content="Highcharts - Interactive JavaScript charts for your web pages.">
+  <meta name="generator" content="Joomla! - Open Source Content Management">
+  <title>3D scatter chart | Highcharts</title>
+  <link rel="stylesheet" href="./3D scatter chart _ Highcharts_files/demo.css" type="text/css">
+  <link rel="stylesheet" href="./3D scatter chart _ Highcharts_files/bootstrap.min.css" type="text/css">
+  <link rel="stylesheet" href="./3D scatter chart _ Highcharts_files/source-sans-pro.css" type="text/css">
+  <link rel="stylesheet" href="./3D scatter chart _ Highcharts_files/font-awesome.css" type="text/css">
+  <link rel="stylesheet" href="./3D scatter chart _ Highcharts_files/template.css" type="text/css">
+  <style type="text/css">
+.container{width:100%}#hs-component{background-color:inherit;padding:0}#hs-component .container{padding:0;width:100%}#comp-menu{background-color:#3A3A4F;z-index:1;padding:0}#comp-menu .cont{padding:0 50px}#comp-menu h2,#comp-menu h2 a{color:#eee;font-weight:400;text-transform:inherit}#comp-menu h2 a:hover{color:#8085e8}a.btn.btn-theme{color:#eeeaea;background-color:#565669;border:1px solid #34343e;border-bottom:0;border-radius:0;font-weight:700;font-size:13px;margin:0 2px 0 0;letter-spacing:.5px;line-height:36px;padding:0 15px;transition:all .2s ease-in-out;-webkit-transition:all .2s ease-in-out;-moz-transition:all .2s ease-in-out;-ms-transition:all .2s ease-in-out}a.btn.btn-theme:hover{background-color:#6A6A7E;color:#90ef7f}a.btn.btn-theme.disabled{background-color:#eee;color:#313131;opacity:1}.demo{background-color:#eee;padding:40px 50px}.demo .demo-name{color:#47475C;font-weight:400;text-transform:none;text-align:center;display:inline;margin:0 10px}#chart-switcher{text-align:center;padding:30px 0}.demo #chart-switcher #next-example,.demo #chart-switcher #previous-example{font-size:30px;padding:0 10px;color:#888}#demo-buttons{text-align:center;padding:20px 0}#demo-buttons a,#demo-buttons button{background-color:#ddd}#demo-buttons a:hover,#demo-buttons button:hover{background-color:#8085E8;color:#eee}.demo .chart-container{position:relative;padding:0}.demo .chart-container>#container{box-shadow:0 3px 4px #ddd}.demo .chart-container #previous-example{position:absolute;top:40%;left:-35px;font-size:55px}.demo .chart-container #next-example{position:absolute;top:40%;right:-35px;font-size:55px}.demo .chart-container #next-example,.demo .chart-container #previous-example{color:#999;cursor:pointer}.demo .chart-container #next-example:hover,.demo .chart-container #previous-example:hover{color:#58BB45}.sidebar-eq-fill{background-color:#eee}#small-switcher{margin:0 -15px;padding:10px;background-color:#3A3A4F;height:45px}@media screen and (max-width:420px){.demo .chart-container,.sidebar-wrapper .sidebar-eq{padding:0}#chart-switcher{padding:0;background-color:#3A3A4F}#small-switcher{text-align:center}.demo .chart-container>#container{box-shadow:none}.demo .demo-name{color:silver}.demo #chart-switcher #next-example,.demo #chart-switcher #previous-example{font-size:20px}.sidebar-wrapper .sidebar-eq.demo{padding-top:0}#sidebar-close,#view-menu{position:absolute;top:0;left:0;background-color:#3A3A4F;color:#fff;border-radius:0;z-index:100;cursor:pointer;padding:0 10px;line-height:45px}#sidebar-close{display:none}#view-menu,.toggled #sidebar-close{display:block}#demo-buttons #codepen,#demo-buttons #jsfiddle,.toggled #view-menu{display:none}#demo-buttons{background-color:#3a3a4f}#demo-buttons a.button,#demo-buttons button{min-width:20em}}@media screen and (min-width:420px) and (max-width:768px){.demo{padding:15px}.sidebar-wrapper .sidebar-eq.demo{padding-top:0;background-color:inherit}#sidebar-close,#view-menu{position:absolute;top:0;left:0;background-color:#3A3A4F;color:#fff;border-radius:0;z-index:100;cursor:pointer;padding:10px}#sidebar-close{display:none}#view-menu,.toggled #sidebar-close{display:block}.toggled #view-menu{display:none}}
+  </style>
+  <script src="./3D scatter chart _ Highcharts_files/code_prettify.js.Без названия" type="text/javascript"></script><link rel="stylesheet" type="text/css" href="./3D scatter chart _ Highcharts_files/prettify.css">
+  <script src="./3D scatter chart _ Highcharts_files/jquery-3.1.1.js.Без названия" type="text/javascript"></script>
+  <script src="./3D scatter chart _ Highcharts_files/bootstrap.js.Без названия" type="text/javascript"></script>
+  <script src="./3D scatter chart _ Highcharts_files/modernizr.js.Без названия" type="text/javascript"></script>
+  <script src="./3D scatter chart _ Highcharts_files/script.js.Без названия" type="text/javascript"></script>
+  <script src="./3D scatter chart _ Highcharts_files/jquery.appear.min.js.Без названия" type="text/javascript"></script>
+  <script type="text/javascript">
+jQuery(document).ready(function(){jQuery("#view-menu").click(function(e){jQuery("#wrap").toggleClass("toggled")}),jQuery("#sidebar-close").click(function(e){jQuery("#wrap").removeClass("toggled")}),jQuery(document).keydown(function(e){var t;"INPUT"!=e.target.tagName&&(39==e.keyCode?t=document.getElementById("next-example"):37==e.keyCode&&(t=document.getElementById("previous-example")),t&&(location.href=t.href))}),jQuery("#switcher-selector").bind("change",function(){var e=jQuery(this).val();return e&&(window.location=e),!1})});
+  </script>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="apple-touch-icon" sizes="57x57" href="https://www.highcharts.com/images/ico/apple-touch-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="https://www.highcharts.com/images/ico/apple-touch-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="https://www.highcharts.com/images/ico/apple-touch-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="https://www.highcharts.com/images/ico/apple-touch-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="https://www.highcharts.com/images/ico/apple-touch-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="https://www.highcharts.com/images/ico/apple-touch-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="https://www.highcharts.com/images/ico/apple-touch-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="https://www.highcharts.com/images/ico/apple-touch-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="https://www.highcharts.com/images/ico/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="https://www.highcharts.com/images/ico/favicon-192x192.png" sizes="192x192">
+		<link rel="icon" type="image/png" href="https://www.highcharts.com/images/ico/favicon-160x160.png" sizes="160x160">
+		<link rel="icon" type="image/png" href="https://www.highcharts.com/images/ico/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" type="image/png" href="https://www.highcharts.com/images/ico/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" type="image/png" href="https://www.highcharts.com/images/ico/favicon-32x32.png" sizes="32x32">
+		<link href="./3D scatter chart _ Highcharts_files/css" rel="stylesheet" type="text/css">
+		<link href="./3D scatter chart _ Highcharts_files/css(1)" rel="stylesheet" type="text/css">
+		<meta name="msapplication-TileColor" content="#2b5797">
+		<meta name="msapplication-TileImage" content="/images/ico/mstile-144x144.png">
+
+		
+		<script src="./3D scatter chart _ Highcharts_files/covervid.js.Без названия" type="text/javascript"></script>
+		<script src="./3D scatter chart _ Highcharts_files/fullscreen.js.Без названия" type="text/javascript"></script>
+		
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<!--script async src="https://www.googletagmanager.com/gtag/js?id=UA-2995052-3"></script-->
+		<!--script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+		  gtag('config', 'UA-2995052-3');
+		</script-->
+		<!-- End global site tag -->
+
+		<!-- Google Analytics code -->
+		<!--script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-2995052-3', 'auto');
+		  ga('send', 'pageview');
+		</script-->
+		<!-- End google analytics code -->
+		
+
+		<!--script>
+		/**
+		* Function that tracks a click on an outbound link in Analytics.
+		* This function takes a valid URL string as an argument, and uses that URL string
+		* as the event label. Setting the transport method to 'beacon' lets the hit be sent
+		* using 'navigator.sendBeacon' in browser that support it.
+		*/
+		var trackOutboundLink = function(url) {
+		   ga('send', 'event', 'jsFiddleDemo', 'goToFiddle', url, {
+		     'transport': 'beacon',
+		     'hitCallback': function(){document.location = url;}
+		   });
+		}
+		</script-->
+		<!-- Google Tag Manager -->
+		<!--script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-5WLVCCK');</script-->
+		<!-- End Google Tag Manager -->
+	<link href="./3D scatter chart _ Highcharts_files/css(2)" rel="stylesheet" type="text/css"></head>
+	<body class="">
+		<!-- Google Tag Manager (noscript) -->
+		<!--noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WLVCCK"
+		height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript-->
+		<!-- End Google Tag Manager (noscript) -->
+		<div id="menu">
+			<nav class="navbar navbar-default" role="navigation">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+				            <span class="sr-only">Toggle navigation</span>
+          				</a>
+						<a class="navbar-brand" href="http://www.highcharts.com/" title="Highcharts">
+							<img src="./3D scatter chart _ Highcharts_files/logo.svg" alt="Highcharts">
+						</a>
+					</div>
+					<div class="collapse navbar-collapse">
+						<div id="menu-container">
+							<div id="menu-second" class="hidden-xs">
+								
+<ul class="nav navbar-nav">
+<li class="item-112 deeper dropdown"><a href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="toggle-arrow"></span></a>
+<ul class="dropdown-menu" role="menu"><li class="item-260"><a href="https://www.highcharts.com/about">About Us</a></li><li class="item-286"><a href="https://www.highcharts.com/jobs">Job Openings</a></li><li class="item-114"><a href="https://www.highcharts.com/contact-email">Contact Us</a></li><li class="item-276"><a href="https://www.highcharts.com/news/">News</a></li><li class="item-291"><a href="https://shop.highsoft.com/reseller">Resellers</a></li></ul></li></ul>
+
+								<div class="clearfix"></div>
+							</div>
+							<div id="menu-main">
+								
+<ul class="nav navbar-nav">
+<li class="item-101"><a href="https://www.highcharts.com/">Home</a></li><li class="item-254 deeper dropdown"><a href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#" class="dropdown-toggle" data-toggle="dropdown">Products <span class="toggle-arrow"></span></a>
+<ul class="dropdown-menu" role="menu"><li class="item-255"><a href="https://www.highcharts.com/products/highcharts">Highcharts</a></li><li class="item-256"><a href="https://www.highcharts.com/products/highstock">Highstock</a></li><li class="item-257"><a href="https://www.highcharts.com/products/highmaps">Highmaps</a></li><li class="item-290"><a href="https://www.highcharts.com/blog/products/mobile/">Mobile</a></li><li class="item-258"><a href="http://cloud.highcharts.com/">Highcharts Cloud</a></li><li class="item-273"><a href="https://www.highcharts.com/products/highcharts-editor">Highcharts Editor</a></li><li class="item-279"><a href="https://www.highcharts.com/products/wrappers">Wrappers</a></li><li class="item-261"><a href="https://www.highcharts.com/products/plugin-registry">Plugins</a></li></ul></li><li class="item-103 active deeper dropdown"><a href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#" class="dropdown-toggle" data-toggle="dropdown">Demo <span class="toggle-arrow"></span></a>
+<ul class="dropdown-menu" role="menu"><li class="item-106 current active"><a href="https://www.highcharts.com/demo">Highcharts demos</a></li><li class="item-107"><a href="https://www.highcharts.com/stock/demo">Highstock demos</a></li><li class="item-205"><a href="https://www.highcharts.com/maps/demo">Highmaps demo</a></li></ul></li><li class="item-108 deeper dropdown"><a href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#" class="dropdown-toggle" data-toggle="dropdown">Docs <span class="toggle-arrow"></span></a>
+<ul class="dropdown-menu" role="menu"><li class="item-128"><a href="https://www.highcharts.com/docs">General Documentation</a></li><li class="item-124"><a href="http://api.highcharts.com/highcharts">API Reference</a></li><li class="item-127"><a href="https://www.highcharts.com/documentation/changelog">Changelog</a></li><li class="item-129"><a href="https://www.highcharts.com/documentation/roadmap">Roadmap</a></li></ul></li><li class="item-109 deeper dropdown"><a href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#" class="dropdown-toggle" data-toggle="dropdown">Support <span class="toggle-arrow"></span></a>
+<ul class="dropdown-menu" role="menu"><li class="item-110"><a href="https://www.highcharts.com/support">Support</a></li><li class="item-201"><a href="https://www.highcharts.com/download">Download</a></li></ul></li><li class="item-281"><a href="https://www.highcharts.com/blog">Blog</a></li><li class="item-282 deeper dropdown"><a href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#" class="dropdown-toggle" data-toggle="dropdown">Community <span class="toggle-arrow"></span></a>
+<ul class="dropdown-menu" role="menu"><li class="item-283"><a href="https://www.highcharts.com/use-cases/">Customer Showcase</a></li><li class="item-284"><a href="https://www.highcharts.com/blog/snippets/">Code Examples</a></li><li class="item-285"><a href="https://www.highcharts.com/blog/community/">Contribute</a></li></ul></li><li class="item-262"><a href="http://shop.highsoft.com/">Buy</a></li></ul>
+
+								<div class="clearfix"></div>
+							</div>
+							<div id="mobile-second" class="visible-xs">
+								
+<ul class="nav navbar-nav">
+<li class="item-112 deeper dropdown"><a href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#" class="dropdown-toggle" data-toggle="dropdown">About Us <span class="toggle-arrow"></span></a>
+<ul class="dropdown-menu" role="menu"><li class="item-260"><a href="https://www.highcharts.com/about">About Us</a></li><li class="item-286"><a href="https://www.highcharts.com/jobs">Job Openings</a></li><li class="item-114"><a href="https://www.highcharts.com/contact-email">Contact Us</a></li><li class="item-276"><a href="https://www.highcharts.com/news/">News</a></li><li class="item-291"><a href="https://shop.highsoft.com/reseller">Resellers</a></li></ul></li></ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+						<div id="hs-component">
+						<div class="container">
+				<!--[if lte IE 8]>
+
+<p style="padding: 1em; background: red; color: white">You're using an old IE browser. Although our website isn't optimized for it, the Highcharts product is. In order to use Highcharts with an old IE browser, add the <code>oldie.js</code> module in a conditional comment.</p>
+<![endif]-->
+<div id="jsCode" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="jsCode-label" style="display: none;" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button><p id="jsCode-label" class="h4 modal-title">Highcharts Configuration Preview</p></div><div class="modal-body"><pre class="prettyprint prettyprinted" style=""><span class="com">// Give the points a 3D feel by adding a radial gradient</span><span class="pln">
+</span><span class="typ">Highcharts</span><span class="pun">.</span><span class="pln">setOptions</span><span class="pun">({</span><span class="pln">
+    colors</span><span class="pun">:</span><span class="pln"> $</span><span class="pun">.</span><span class="pln">map</span><span class="pun">(</span><span class="typ">Highcharts</span><span class="pun">.</span><span class="pln">getOptions</span><span class="pun">().</span><span class="pln">colors</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">function</span><span class="pln"> </span><span class="pun">(</span><span class="pln">color</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">return</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            radialGradient</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                cx</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.4</span><span class="pun">,</span><span class="pln">
+                cy</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.3</span><span class="pun">,</span><span class="pln">
+                r</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0.5</span><span class="pln">
+            </span><span class="pun">},</span><span class="pln">
+            stops</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="pun">[</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> color</span><span class="pun">],</span><span class="pln">
+                </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="typ">Highcharts</span><span class="pun">.</span><span class="typ">Color</span><span class="pun">(</span><span class="pln">color</span><span class="pun">).</span><span class="pln">brighten</span><span class="pun">(-</span><span class="lit">0.2</span><span class="pun">).</span><span class="kwd">get</span><span class="pun">(</span><span class="str">'rgb'</span><span class="pun">)]</span><span class="pln">
+            </span><span class="pun">]</span><span class="pln">
+        </span><span class="pun">};</span><span class="pln">
+    </span><span class="pun">})</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+</span><span class="com">// Set up the chart</span><span class="pln">
+</span><span class="kwd">var</span><span class="pln"> chart </span><span class="pun">=</span><span class="pln"> </span><span class="kwd">new</span><span class="pln"> </span><span class="typ">Highcharts</span><span class="pun">.</span><span class="typ">Chart</span><span class="pun">({</span><span class="pln">
+    chart</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        renderTo</span><span class="pun">:</span><span class="pln"> </span><span class="str">'container'</span><span class="pun">,</span><span class="pln">
+        margin</span><span class="pun">:</span><span class="pln"> </span><span class="lit">100</span><span class="pun">,</span><span class="pln">
+        type</span><span class="pun">:</span><span class="pln"> </span><span class="str">'scatter3d'</span><span class="pun">,</span><span class="pln">
+        animation</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+        options3d</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            enabled</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+            alpha</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+            beta</span><span class="pun">:</span><span class="pln"> </span><span class="lit">30</span><span class="pun">,</span><span class="pln">
+            depth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">250</span><span class="pun">,</span><span class="pln">
+            viewDistance</span><span class="pun">:</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln">
+            fitToPlot</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">,</span><span class="pln">
+            frame</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                bottom</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rgba(0,0,0,0.02)'</span><span class="pln"> </span><span class="pun">},</span><span class="pln">
+                back</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rgba(0,0,0,0.04)'</span><span class="pln"> </span><span class="pun">},</span><span class="pln">
+                side</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> size</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rgba(0,0,0,0.06)'</span><span class="pln"> </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    title</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        text</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Draggable box'</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    subtitle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        text</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Click and drag the plot area to rotate in space'</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    plotOptions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        scatter</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            width</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+            height</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+            depth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    yAxis</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        min</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+        max</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+        title</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">null</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    xAxis</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        min</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+        max</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+        gridLineWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    zAxis</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        min</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln">
+        max</span><span class="pun">:</span><span class="pln"> </span><span class="lit">10</span><span class="pun">,</span><span class="pln">
+        showFirstLabel</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    legend</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        enabled</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">false</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    series</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[{</span><span class="pln">
+        name</span><span class="pun">:</span><span class="pln"> </span><span class="str">'Reading'</span><span class="pun">,</span><span class="pln">
+        colorByPoint</span><span class="pun">:</span><span class="pln"> </span><span class="kwd">true</span><span class="pun">,</span><span class="pln">
+        data</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">0</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">6</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">8</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">3</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">7</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">],</span><span class="pln">
+            </span><span class="pun">[</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="lit">4</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">3</span><span class="pun">,</span><span class="pln"> </span><span class="lit">5</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">6</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">1</span><span class="pun">],</span><span class="pln"> </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="lit">9</span><span class="pun">,</span><span class="pln"> </span><span class="lit">2</span><span class="pun">]]</span><span class="pln">
+    </span><span class="pun">}]</span><span class="pln">
+</span><span class="pun">});</span><span class="pln">
+
+
+</span><span class="com">// Add mouse and touch events for rotation</span><span class="pln">
+</span><span class="pun">(</span><span class="kwd">function</span><span class="pln"> </span><span class="pun">(</span><span class="pln">H</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    </span><span class="kwd">function</span><span class="pln"> dragStart</span><span class="pun">(</span><span class="pln">eStart</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        eStart </span><span class="pun">=</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">pointer</span><span class="pun">.</span><span class="pln">normalize</span><span class="pun">(</span><span class="pln">eStart</span><span class="pun">);</span><span class="pln">
+
+        </span><span class="kwd">var</span><span class="pln"> posX </span><span class="pun">=</span><span class="pln"> eStart</span><span class="pun">.</span><span class="pln">chartX</span><span class="pun">,</span><span class="pln">
+            posY </span><span class="pun">=</span><span class="pln"> eStart</span><span class="pun">.</span><span class="pln">chartY</span><span class="pun">,</span><span class="pln">
+            alpha </span><span class="pun">=</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">options</span><span class="pun">.</span><span class="pln">chart</span><span class="pun">.</span><span class="pln">options3d</span><span class="pun">.</span><span class="pln">alpha</span><span class="pun">,</span><span class="pln">
+            beta </span><span class="pun">=</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">options</span><span class="pun">.</span><span class="pln">chart</span><span class="pun">.</span><span class="pln">options3d</span><span class="pun">.</span><span class="pln">beta</span><span class="pun">,</span><span class="pln">
+            sensitivity </span><span class="pun">=</span><span class="pln"> </span><span class="lit">5</span><span class="pun">;</span><span class="pln"> </span><span class="com">// lower is more sensitive</span><span class="pln">
+
+        </span><span class="kwd">function</span><span class="pln"> drag</span><span class="pun">(</span><span class="pln">e</span><span class="pun">)</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            </span><span class="com">// Get e.chartX and e.chartY</span><span class="pln">
+            e </span><span class="pun">=</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">pointer</span><span class="pun">.</span><span class="pln">normalize</span><span class="pun">(</span><span class="pln">e</span><span class="pun">);</span><span class="pln">
+
+            chart</span><span class="pun">.</span><span class="pln">update</span><span class="pun">({</span><span class="pln">
+                chart</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    options3d</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                        alpha</span><span class="pun">:</span><span class="pln"> alpha </span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">e</span><span class="pun">.</span><span class="pln">chartY </span><span class="pun">-</span><span class="pln"> posY</span><span class="pun">)</span><span class="pln"> </span><span class="pun">/</span><span class="pln"> sensitivity</span><span class="pun">,</span><span class="pln">
+                        beta</span><span class="pun">:</span><span class="pln"> beta </span><span class="pun">+</span><span class="pln"> </span><span class="pun">(</span><span class="pln">posX </span><span class="pun">-</span><span class="pln"> e</span><span class="pun">.</span><span class="pln">chartX</span><span class="pun">)</span><span class="pln"> </span><span class="pun">/</span><span class="pln"> sensitivity
+                    </span><span class="pun">}</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">},</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">undefined</span><span class="pun">,</span><span class="pln"> </span><span class="kwd">false</span><span class="pun">);</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+
+        chart</span><span class="pun">.</span><span class="pln">unbindDragMouse </span><span class="pun">=</span><span class="pln"> H</span><span class="pun">.</span><span class="pln">addEvent</span><span class="pun">(</span><span class="pln">document</span><span class="pun">,</span><span class="pln"> </span><span class="str">'mousemove'</span><span class="pun">,</span><span class="pln"> drag</span><span class="pun">);</span><span class="pln">
+        chart</span><span class="pun">.</span><span class="pln">unbindDragTouch </span><span class="pun">=</span><span class="pln"> H</span><span class="pun">.</span><span class="pln">addEvent</span><span class="pun">(</span><span class="pln">document</span><span class="pun">,</span><span class="pln"> </span><span class="str">'touchmove'</span><span class="pun">,</span><span class="pln"> drag</span><span class="pun">);</span><span class="pln">
+
+        H</span><span class="pun">.</span><span class="pln">addEvent</span><span class="pun">(</span><span class="pln">document</span><span class="pun">,</span><span class="pln"> </span><span class="str">'mouseup'</span><span class="pun">,</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">unbindDragMouse</span><span class="pun">);</span><span class="pln">
+        H</span><span class="pun">.</span><span class="pln">addEvent</span><span class="pun">(</span><span class="pln">document</span><span class="pun">,</span><span class="pln"> </span><span class="str">'touchend'</span><span class="pun">,</span><span class="pln"> chart</span><span class="pun">.</span><span class="pln">unbindDragTouch</span><span class="pun">);</span><span class="pln">
+    </span><span class="pun">}</span><span class="pln">
+    H</span><span class="pun">.</span><span class="pln">addEvent</span><span class="pun">(</span><span class="pln">chart</span><span class="pun">.</span><span class="pln">container</span><span class="pun">,</span><span class="pln"> </span><span class="str">'mousedown'</span><span class="pun">,</span><span class="pln"> dragStart</span><span class="pun">);</span><span class="pln">
+    H</span><span class="pun">.</span><span class="pln">addEvent</span><span class="pun">(</span><span class="pln">chart</span><span class="pun">.</span><span class="pln">container</span><span class="pun">,</span><span class="pln"> </span><span class="str">'touchstart'</span><span class="pun">,</span><span class="pln"> dragStart</span><span class="pun">);</span><span class="pln">
+</span><span class="pun">}(</span><span class="typ">Highcharts</span><span class="pun">));</span></pre></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><div id="themeCode" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="themeCode-label" style="display: none;" aria-hidden="true"><div class="modal-dialog" role="document"><div class="modal-content"><div class="modal-header"><button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"><i class="fa fa-times"></i></span></button><p id="themeCode-label" class="h4 modal-title">Highcharts Theme: Dark-unica</p></div><div class="modal-body"><pre class="prettyprint prettyprinted" style=""><span class="com">/**
+ * (c) 2010-2017 Torstein Honsi
+ *
+ * License: www.highcharts.com/license
+ *
+ * Dark theme for Highcharts JS
+ * @author Torstein Honsi
+ */</span><span class="pln">
+
+</span><span class="str">'use strict'</span><span class="pun">;</span><span class="pln">
+</span><span class="com">/* global document */</span><span class="pln">
+</span><span class="com">// Load the fonts</span><span class="pln">
+</span><span class="kwd">import</span><span class="pln"> </span><span class="typ">Highcharts</span><span class="pln"> </span><span class="kwd">from</span><span class="pln"> </span><span class="str">'../parts/Globals.js'</span><span class="pun">;</span><span class="pln">
+</span><span class="typ">Highcharts</span><span class="pun">.</span><span class="pln">createElement</span><span class="pun">(</span><span class="str">'link'</span><span class="pun">,</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    href</span><span class="pun">:</span><span class="pln"> </span><span class="str">'https://fonts.googleapis.com/css?family=Unica+One'</span><span class="pun">,</span><span class="pln">
+    rel</span><span class="pun">:</span><span class="pln"> </span><span class="str">'stylesheet'</span><span class="pun">,</span><span class="pln">
+    type</span><span class="pun">:</span><span class="pln"> </span><span class="str">'text/css'</span><span class="pln">
+</span><span class="pun">},</span><span class="pln"> </span><span class="kwd">null</span><span class="pun">,</span><span class="pln"> document</span><span class="pun">.</span><span class="pln">getElementsByTagName</span><span class="pun">(</span><span class="str">'head'</span><span class="pun">)[</span><span class="lit">0</span><span class="pun">]);</span><span class="pln">
+
+</span><span class="typ">Highcharts</span><span class="pun">.</span><span class="pln">theme </span><span class="pun">=</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+    colors</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="str">'#2b908f'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#90ee7e'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#f45b5b'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#7798BF'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#aaeeee'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#ff0066'</span><span class="pun">,</span><span class="pln">
+        </span><span class="str">'#eeaaee'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#55BF3B'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#DF5353'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#7798BF'</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#aaeeee'</span><span class="pun">],</span><span class="pln">
+    chart</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        backgroundColor</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            linearGradient</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln"> x1</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> y1</span><span class="pun">:</span><span class="pln"> </span><span class="lit">0</span><span class="pun">,</span><span class="pln"> x2</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln"> y2</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pln"> </span><span class="pun">},</span><span class="pln">
+            stops</span><span class="pun">:</span><span class="pln"> </span><span class="pun">[</span><span class="pln">
+                </span><span class="pun">[</span><span class="lit">0</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#2a2a2b'</span><span class="pun">],</span><span class="pln">
+                </span><span class="pun">[</span><span class="lit">1</span><span class="pun">,</span><span class="pln"> </span><span class="str">'#3e3e40'</span><span class="pun">]</span><span class="pln">
+            </span><span class="pun">]</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            fontFamily</span><span class="pun">:</span><span class="pln"> </span><span class="str">'\'Unica One\', sans-serif'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        plotBorderColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#606063'</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    title</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#E0E0E3'</span><span class="pun">,</span><span class="pln">
+            textTransform</span><span class="pun">:</span><span class="pln"> </span><span class="str">'uppercase'</span><span class="pun">,</span><span class="pln">
+            fontSize</span><span class="pun">:</span><span class="pln"> </span><span class="str">'20px'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    subtitle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#E0E0E3'</span><span class="pun">,</span><span class="pln">
+            textTransform</span><span class="pun">:</span><span class="pln"> </span><span class="str">'uppercase'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    xAxis</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        gridLineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#707073'</span><span class="pun">,</span><span class="pln">
+        labels</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#E0E0E3'</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        lineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#707073'</span><span class="pun">,</span><span class="pln">
+        minorGridLineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#505053'</span><span class="pun">,</span><span class="pln">
+        tickColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#707073'</span><span class="pun">,</span><span class="pln">
+        title</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#A0A0A3'</span><span class="pln">
+
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    yAxis</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        gridLineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#707073'</span><span class="pun">,</span><span class="pln">
+        labels</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#E0E0E3'</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        lineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#707073'</span><span class="pun">,</span><span class="pln">
+        minorGridLineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#505053'</span><span class="pun">,</span><span class="pln">
+        tickColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#707073'</span><span class="pun">,</span><span class="pln">
+        tickWidth</span><span class="pun">:</span><span class="pln"> </span><span class="lit">1</span><span class="pun">,</span><span class="pln">
+        title</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#A0A0A3'</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    tooltip</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        backgroundColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rgba(0, 0, 0, 0.85)'</span><span class="pun">,</span><span class="pln">
+        style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#F0F0F0'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    plotOptions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        series</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            dataLabels</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#B0B0B3'</span><span class="pln">
+            </span><span class="pun">},</span><span class="pln">
+            marker</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                lineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#333'</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        boxplot</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            fillColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#505053'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        candlestick</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            lineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'white'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        errorbar</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'white'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    legend</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        itemStyle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#E0E0E3'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        itemHoverStyle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#FFF'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        itemHiddenStyle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#606063'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    credits</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#666'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+    labels</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#707073'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    drilldown</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        activeAxisLabelStyle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#F0F0F3'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        activeDataLabelStyle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#F0F0F3'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    navigation</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        buttonOptions</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            symbolStroke</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#DDDDDD'</span><span class="pun">,</span><span class="pln">
+            theme</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                fill</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#505053'</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    </span><span class="com">// scroll charts</span><span class="pln">
+    rangeSelector</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        buttonTheme</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            fill</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#505053'</span><span class="pun">,</span><span class="pln">
+            stroke</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#000000'</span><span class="pun">,</span><span class="pln">
+            style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#CCC'</span><span class="pln">
+            </span><span class="pun">},</span><span class="pln">
+            states</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                hover</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    fill</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#707073'</span><span class="pun">,</span><span class="pln">
+                    stroke</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#000000'</span><span class="pun">,</span><span class="pln">
+                    style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                        color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'white'</span><span class="pln">
+                    </span><span class="pun">}</span><span class="pln">
+                </span><span class="pun">},</span><span class="pln">
+                </span><span class="kwd">select</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                    fill</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#000003'</span><span class="pun">,</span><span class="pln">
+                    stroke</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#000000'</span><span class="pun">,</span><span class="pln">
+                    style</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+                        color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'white'</span><span class="pln">
+                    </span><span class="pun">}</span><span class="pln">
+                </span><span class="pun">}</span><span class="pln">
+            </span><span class="pun">}</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        inputBoxBorderColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#505053'</span><span class="pun">,</span><span class="pln">
+        inputStyle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            backgroundColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#333'</span><span class="pun">,</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'silver'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        labelStyle</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'silver'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    navigator</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        handles</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            backgroundColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#666'</span><span class="pun">,</span><span class="pln">
+            borderColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#AAA'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        outlineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#CCC'</span><span class="pun">,</span><span class="pln">
+        maskFill</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rgba(255,255,255,0.1)'</span><span class="pun">,</span><span class="pln">
+        series</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            color</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#7798BF'</span><span class="pun">,</span><span class="pln">
+            lineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#A6C7ED'</span><span class="pln">
+        </span><span class="pun">},</span><span class="pln">
+        xAxis</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+            gridLineColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#505053'</span><span class="pln">
+        </span><span class="pun">}</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    scrollbar</span><span class="pun">:</span><span class="pln"> </span><span class="pun">{</span><span class="pln">
+        barBackgroundColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#808083'</span><span class="pun">,</span><span class="pln">
+        barBorderColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#808083'</span><span class="pun">,</span><span class="pln">
+        buttonArrowColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#CCC'</span><span class="pun">,</span><span class="pln">
+        buttonBackgroundColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#606063'</span><span class="pun">,</span><span class="pln">
+        buttonBorderColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#606063'</span><span class="pun">,</span><span class="pln">
+        rifleColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#FFF'</span><span class="pun">,</span><span class="pln">
+        trackBackgroundColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#404043'</span><span class="pun">,</span><span class="pln">
+        trackBorderColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#404043'</span><span class="pln">
+    </span><span class="pun">},</span><span class="pln">
+
+    </span><span class="com">// special colors for some of the</span><span class="pln">
+    legendBackgroundColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rgba(0, 0, 0, 0.5)'</span><span class="pun">,</span><span class="pln">
+    background2</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#505053'</span><span class="pun">,</span><span class="pln">
+    dataLabelsColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#B0B0B3'</span><span class="pun">,</span><span class="pln">
+    textColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#C0C0C0'</span><span class="pun">,</span><span class="pln">
+    contrastTextColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'#F0F0F3'</span><span class="pun">,</span><span class="pln">
+    maskColor</span><span class="pun">:</span><span class="pln"> </span><span class="str">'rgba(255,255,255,0.3)'</span><span class="pln">
+</span><span class="pun">};</span><span class="pln">
+
+</span><span class="com">// Apply the theme</span><span class="pln">
+</span><span class="typ">Highcharts</span><span class="pun">.</span><span class="pln">setOptions</span><span class="pun">(</span><span class="typ">Highcharts</span><span class="pun">.</span><span class="pln">theme</span><span class="pun">);</span></pre></div><div class="modal-footer"><button type="button" class="btn btn-default" data-dismiss="modal">Close</button></div></div></div></div><div id="wrap" class="sidebar-wrapper">
+	<div id="comp-menu" class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hidden-xs">
+		<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9"></div>
+		<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 cont">
+			<h2 class="demo-name"><a href="https://www.highcharts.com/demo/dark-unica">Highcharts Demos</a> › 3D scatter chart</h2>
+						<div class="btn-group theme">
+																																<a class="btn btn-theme" href="https://www.highcharts.com/demo/3d-scatter-draggable">Default</a>
+																									<a class="btn btn-theme disabled" href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#">Dark Unica</a>
+																																					<a class="btn btn-theme" href="https://www.highcharts.com/demo/3d-scatter-draggable/sand-signika">Sand Signika</a>
+																																					<a class="btn btn-theme" href="https://www.highcharts.com/demo/3d-scatter-draggable/grid-light">Grid Light</a>
+												</div>
+					</div>
+		<div class="clearfix"></div>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9 sidebar">
+		<ul class="nav nav-sidebar">
+						<li class="">
+				<div class=""><span>Line charts</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/line-basic/dark-unica">
+							Basic line						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/line-ajax/dark-unica">
+							Ajax loaded data, clickable points						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/line-labels/dark-unica">
+							With data labels						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/annotations/dark-unica">
+							With annotations						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/line-time-series/dark-unica">
+							Time series, zoomable						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/spline-inverted/dark-unica">
+							Spline with inverted axes						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/spline-symbols/dark-unica">
+							Spline with symbols						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/spline-plot-bands/dark-unica">
+							Spline with plot bands						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/spline-irregular-time/dark-unica">
+							Time data with irregular intervals						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/line-log-axis/dark-unica">
+							Logarithmic axis						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/line-boost/dark-unica">
+							Line chart with 500k points						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Area charts</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/area-basic/dark-unica">
+							Basic area						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/area-negative/dark-unica">
+							Area with negative values						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/area-stacked/dark-unica">
+							Stacked area						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/area-stacked-percent/dark-unica">
+							Percentage area						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/area-missing/dark-unica">
+							Area with missing points						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/area-inverted/dark-unica">
+							Inverted axes						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/areaspline/dark-unica">
+							Area-spline						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/arearange/dark-unica">
+							Area range						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/arearange-line/dark-unica">
+							Area range and line						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/sparkline/dark-unica">
+							Sparkline charts						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/streamgraph/dark-unica">
+							Streamgraph						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Column and bar charts</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/bar-basic/dark-unica">
+							Basic bar						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/bar-stacked/dark-unica">
+							Stacked bar						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/bar-negative-stack/dark-unica">
+							Bar with negative stack						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-basic/dark-unica">
+							Basic column						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-negative/dark-unica">
+							Column with negative values						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-stacked/dark-unica">
+							Stacked column						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-stacked-and-grouped/dark-unica">
+							Stacked and grouped column						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-stacked-percent/dark-unica">
+							Stacked percentage column						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-rotated-labels/dark-unica">
+							Column with rotated labels						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-drilldown/dark-unica">
+							Column with drilldown						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-placement/dark-unica">
+							Fixed placement columns						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/column-parsed/dark-unica">
+							Data defined in a HTML table						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/columnrange/dark-unica">
+							Column range						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Pie charts</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pie-basic/dark-unica">
+							Pie chart						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pie-legend/dark-unica">
+							Pie with legend						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pie-donut/dark-unica">
+							Donut chart						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pie-semi-circle/dark-unica">
+							Semi circle donut						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pie-drilldown/dark-unica">
+							Pie with drilldown						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pie-gradient/dark-unica">
+							Pie with gradient fill						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pie-monochrome/dark-unica">
+							Pie with monochrome fill						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Scatter and bubble charts</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/scatter/dark-unica">
+							Scatter plot						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/scatter-boost/dark-unica">
+							Scatter plot with 1 million points						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/bubble/dark-unica">
+							Bubble chart						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/bubble-3d/dark-unica">
+							3D bubbles						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Combinations</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/synchronized-charts/dark-unica">
+							Synchronized charts						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/combo/dark-unica">
+							Column, line and pie						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/combo-dual-axes/dark-unica">
+							Dual axes, line and column						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/combo-multi-axes/dark-unica">
+							Multiple axes						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/combo-regression/dark-unica">
+							Scatter with regression line						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/combo-meteogram/dark-unica">
+							Meteogram						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/combo-timeline/dark-unica">
+							Advanced timeline						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Styled mode (CSS styling)</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/styled-mode-column/dark-unica">
+							Styled mode column						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/styled-mode-pie/dark-unica">
+							Styled mode pie						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Dynamic charts</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/dynamic-update/dark-unica">
+							Spline updating each second						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/dynamic-click-to-add/dark-unica">
+							Click to add a point						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/dynamic-master-detail/dark-unica">
+							Master-detail chart						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/chart-update/dark-unica">
+							Update options after render						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/responsive/dark-unica">
+							Responsive chart						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="active">
+				<div class="active"><span>3D charts</span><icon class="toggle"></icon></div>
+				<ul style="display: block;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/3d-column-interactive/dark-unica">
+							3D column						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/3d-column-null-values/dark-unica">
+							3D column with null and 0 values						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/3d-column-stacking-grouping/dark-unica">
+							3D column with stacking and grouping						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/3d-pie/dark-unica">
+							3D pie						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/3d-pie-donut/dark-unica">
+							3D donut						</a>
+					</li>
+									<li class="active">
+						<a href="https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica">
+							3D scatter chart						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Gauges</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/gauge-speedometer/dark-unica">
+							Gauge series						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/gauge-solid/dark-unica">
+							Solid gauge						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/gauge-activity/dark-unica">
+							Activity gauge						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/gauge-clock/dark-unica">
+							Clock						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/gauge-dual/dark-unica">
+							Gauge with dual axes						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/gauge-vu-meter/dark-unica">
+							VU meter						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/bullet-graph/dark-unica">
+							Bullet graph						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>Heat and tree maps</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/heatmap/dark-unica">
+							Heat map						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/heatmap-canvas/dark-unica">
+							Large heat map						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/honeycomb-usa/dark-unica">
+							Tile map, honeycomb						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/treemap-coloraxis/dark-unica">
+							Tree map with color axis						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/treemap-with-levels/dark-unica">
+							Tree map with levels						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/treemap-large-dataset/dark-unica">
+							Large tree map						</a>
+					</li>
+								</ul>
+			</li>
+						<li class="">
+				<div class=""><span>More chart types</span><icon class="toggle"></icon></div>
+				<ul style="display: none;">
+									<li class="">
+						<a href="https://www.highcharts.com/demo/polar/dark-unica">
+							Polar chart						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/polar-spider/dark-unica">
+							Spiderweb						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/sunburst/dark-unica">
+							Sunburst						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/polar-wind-rose/dark-unica">
+							Wind rose						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/parallel-coordinates/dark-unica">
+							Parallel coordinates						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/windbarb-series/dark-unica">
+							Wind barb						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/vector-plot/dark-unica">
+							Vector plot						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/box-plot/dark-unica">
+							Box plot						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/error-bar/dark-unica">
+							Error bar						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/waterfall/dark-unica">
+							Waterfall						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/variwide/dark-unica">
+							Variwide						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/variable-radius-pie/dark-unica">
+							Variable radius pie						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/histogram/dark-unica">
+							Histogram						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/bellcurve/dark-unica">
+							Bell curve						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/funnel/dark-unica">
+							Funnel chart						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pyramid/dark-unica">
+							Pyramid chart						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/polygon/dark-unica">
+							Polygon series						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/pareto/dark-unica">
+							Pareto chart						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/sankey-diagram/dark-unica">
+							Sankey diagram						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/x-range/dark-unica">
+							X-range series						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/wordcloud/dark-unica">
+							Word cloud						</a>
+					</li>
+									<li class="">
+						<a href="https://www.highcharts.com/demo/renderer/dark-unica">
+							General drawing						</a>
+					</li>
+								</ul>
+			</li>
+					</ul>
+	</div>
+	<div class="col-lg-3 col-md-3 col-sm-3 col-xs-9 sidebar-fill"></div>
+	<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 sidebar-eq demo">
+		<div id="small-switcher" class="visible-xs">
+			<a id="sidebar-close" class="btn-default"><i class="fa fa-chevron-left"></i> Hide Menu</a>
+			<a id="view-menu" class="btn-default" onclick="">More... <i class="fa fa-chevron-right"></i></a>
+						<select id="switcher-selector" class="pull-right">
+				<option value="/demo/3d-scatter-draggable">Default theme</option>
+				<option value="/demo/3d-scatter-draggable/dark-unica" selected="">Dark Unica</option>
+				<option value="/demo/3d-scatter-draggable/sand-signika">Sand Signika</option>
+				<option value="/demo/3d-scatter-draggable/grid-light">Grid Light</option>
+			</select>
+						<div class="clearfix"></div>
+		</div>
+		<div id="chart-switcher" class="visible-xs">
+					<a id="previous-example" title="Previous (arrow left)" href="https://www.highcharts.com/demo/3d-pie-donut/dark-unica"><i class="fa fa-angle-left"></i></a>
+					<h2 class="demo-name">3D scatter chart</h2>
+					<a id="next-example" title="Next (arrow right)" href="https://www.highcharts.com/demo/gauge-speedometer/dark-unica"><i class="fa fa-angle-right"></i></a>
+				</div>
+		<div class="chart-container">
+							<a id="previous-example" class="hidden-xs" title="Previous (arrow left)" href="https://www.highcharts.com/demo/3d-pie-donut/dark-unica"><i class="fa fa-angle-left"></i></a>
+						<script src="./3D scatter chart _ Highcharts_files/highcharts.js.Без названия"></script>
+<script src="./3D scatter chart _ Highcharts_files/highcharts-3d.js.Без названия"></script>
+<script src="./3D scatter chart _ Highcharts_files/exporting.js.Без названия"></script>
+<script src="./3D scatter chart _ Highcharts_files/export-data.js.Без названия"></script>
+
+<div id="container" style="height: 500px" data-highcharts-chart="0"><div id="highcharts-1o7fv9u-0" dir="ltr" class="highcharts-container  highcharts-3d-chart" style="position: relative; overflow: hidden; width: 800px; height: 500px; text-align: left; line-height: normal; z-index: 0; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); font-family: &quot;Unica One&quot;, sans-serif;"><svg version="1.1" class="highcharts-root" style="font-family:&#39;Unica One&#39;, sans-serif;font-size:12px;" xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500"><desc>Created with Highcharts 6.1.0</desc><defs><lineargradient x1="0" y1="0" x2="1" y2="1" id="highcharts-1o7fv9u-1"><stop offset="0" stop-color="#2a2a2b" stop-opacity="1"></stop><stop offset="1" stop-color="#3e3e40" stop-opacity="1"></stop></lineargradient><clippath id="highcharts-1o7fv9u-2"><rect x="-100" y="-100" width="1000" height="700" fill="none"></rect></clippath><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-5"><stop offset="0" stop-color="#2b908f" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(0,93,92)" stop-opacity="1"></stop></radialgradient><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-6"><stop offset="0" stop-color="#90ee7e" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(93,187,75)" stop-opacity="1"></stop></radialgradient><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-7"><stop offset="0" stop-color="#f45b5b" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(193,40,40)" stop-opacity="1"></stop></radialgradient><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-8"><stop offset="0" stop-color="#7798BF" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(68,101,140)" stop-opacity="1"></stop></radialgradient><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-9"><stop offset="0" stop-color="#aaeeee" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(119,187,187)" stop-opacity="1"></stop></radialgradient><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-10"><stop offset="0" stop-color="#ff0066" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(204,0,51)" stop-opacity="1"></stop></radialgradient><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-11"><stop offset="0" stop-color="#eeaaee" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(187,119,187)" stop-opacity="1"></stop></radialgradient><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-12"><stop offset="0" stop-color="#55BF3B" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(34,140,8)" stop-opacity="1"></stop></radialgradient><radialgradient cx="0.4" cy="0.3" r="0.5" id="highcharts-1o7fv9u-13"><stop offset="0" stop-color="#DF5353" stop-opacity="1"></stop><stop offset="1" stop-color="rgb(172,32,32)" stop-opacity="1"></stop></radialgradient></defs><rect fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-1)" class="highcharts-background" x="0" y="0" width="800" height="500" rx="0" ry="0"></rect><g stroke-linejoin="round" class="highcharts-3d-frame highcharts-3d-frame-back"><path fill="rgba(25,25,25,0.04)" d="M 694.5343923188259 414.12565739471245 L 315.8522840245249 333.81342287519533 L 315.74395906107634 333.2797934198727 L 693.9980240145517 413.3253114346761 Z" visibility="hidden"></path><path fill="rgba(25,25,25,0.04)" d="M 314.0464917973087 110.65304531457105 L 703.0983153043635 114.09801230124 L 702.5226790775264 114.10530951873227 L 313.9403249164445 110.66125560089489 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.04)" d="M 315.8522840245249 333.81342287519533 L 314.0464917973087 110.65304531457105 L 313.9403249164445 110.66125560089489 L 315.74395906107634 333.2797934198727 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.04)" d="M 703.0983153043635 114.09801230124 L 694.5343923188259 414.12565739471245 L 693.9980240145517 413.3253114346761 L 702.5226790775264 114.10530951873227 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.04)" d="M 313.9403249164445 110.66125560089489 L 702.5226790775264 114.10530951873227 L 693.9980240145517 413.3253114346761 L 315.74395906107634 333.2797934198727 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.04)" d="M 315.8522840245249 333.81342287519533 L 694.5343923188259 414.12565739471245 L 703.0983153043635 114.09801230124 L 314.0464917973087 110.65304531457105 Z" visibility="hidden"></path></g><g stroke-linejoin="round" class="highcharts-3d-frame highcharts-3d-frame-bottom"><path fill="rgba(25,25,25,0.02)" d="M 156.54412519732006 359.8524418985529 L 530.9213516062547 463.11196512132506 L 694.5343923188259 414.12565739471245 L 315.8522840245249 333.81342287519533 Z" visibility="hidden"></path><path fill="rgba(25,25,25,0.02)" d="M 315.74395906107634 333.2797934198727 L 693.9980240145517 413.3253114346761 L 530.9355648940401 461.9970496264316 L 156.97078576134803 359.16993049107487 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.02)" d="M 156.54412519732006 359.8524418985529 L 315.8522840245249 333.81342287519533 L 315.74395906107634 333.2797934198727 L 156.97078576134803 359.16993049107487 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.02)" d="M 694.5343923188259 414.12565739471245 L 530.9213516062547 463.11196512132506 L 530.9355648940401 461.9970496264316 L 693.9980240145517 413.3253114346761 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.02)" d="M 530.9213516062547 463.11196512132506 L 156.54412519732006 359.8524418985529 L 156.97078576134803 359.16993049107487 L 530.9355648940401 461.9970496264316 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.02)" d="M 315.8522840245249 333.81342287519533 L 694.5343923188259 414.12565739471245 L 693.9980240145517 413.3253114346761 L 315.74395906107634 333.2797934198727 Z" visibility="hidden"></path></g><g stroke-linejoin="round" class="highcharts-3d-frame highcharts-3d-frame-left"><path fill="rgba(25,25,25,0.06)" d="M 156.54412519732006 359.8524418985529 L 156.97078576134803 359.16993049107487 L 315.74395906107634 333.2797934198727 L 315.8522840245249 333.81342287519533 Z" visibility="hidden"></path><path fill="rgba(25,25,25,0.06)" d="M 314.0464917973087 110.65304531457105 L 313.9403249164445 110.66125560089489 L 151.17479999500367 111.76963801089994 L 150.72143991134226 111.76438067733113 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.06)" d="M 315.8522840245249 333.81342287519533 L 314.0464917973087 110.65304531457105 L 150.72143991134226 111.76438067733113 L 156.54412519732006 359.8524418985529 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.06)" d="M 313.9403249164445 110.66125560089489 L 315.74395906107634 333.2797934198727 L 156.97078576134803 359.16993049107487 L 151.17479999500367 111.76963801089994 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.06)" d="M 156.54412519732006 359.8524418985529 L 150.72143991134226 111.76438067733113 L 151.17479999500367 111.76963801089994 L 156.97078576134803 359.16993049107487 Z" visibility="visible"></path><path fill="rgba(0,0,0,0.06)" d="M 314.0464917973087 110.65304531457105 L 315.8522840245249 333.81342287519533 L 315.74395906107634 333.2797934198727 L 313.9403249164445 110.66125560089489 Z" visibility="hidden"></path></g><rect fill="none" class="highcharts-plot-background" x="100" y="100" width="600" height="300"></rect><g class="highcharts-grid highcharts-xaxis-grid "><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 313.7013115920908 110.65913719596134 L 315.5095688345985 333.2301921364117 M 156.74795557710993 359.1086600528407 L 315.5095688345985 333.2301921364117" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 374.2191830872237 111.19551464642987 L 374.7885542169271 345.77471586255876 M 213.44309720914788 374.6978235470984 L 374.7885542169271 345.77471586255876" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 441.8119430330947 111.79459771650806 L 440.8358069563675 359.75152946172904 M 277.42536422414656 392.29068939975946 L 440.8358069563675 359.75152946172904" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 517.7972556432436 112.46806502862538 L 514.8806739861611 375.4207853584663 M 350.1961877974107 412.30009820692135 L 514.8806739861611 375.4207853584663" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 603.8416551528773 113.23068728376842 L 598.4694108262812 393.10969966370567 M 433.69988744743085 435.2606692320045 L 598.4694108262812 393.10969966370567" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 702.9614270839287 114.10919819708894 L 694.4219569866473 413.4150234496921 M 531.3714439199896 462.11690097883405 L 694.4219569866473 413.4150234496921" opacity="1"></path></g><g class="highcharts-grid highcharts-zaxis-grid "><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 150.81204537052588 111.77210825664218 L 156.61777485357158 359.22749374688203 M 156.61777485357158 359.22749374688203 L 530.5585089548017 462.1095952611365" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 236.62495841131204 111.18774910926373 L 240.23043401790855 345.5933062978106 M 240.23043401790855 345.5933062978106 L 618.0349046440151 435.99918179191985" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 314.23245887867756 110.6592662598151 L 316.0296101211609 333.23321410835285 M 316.0296101211609 333.23321410835285 L 694.2801093187204 413.241113133324" opacity="1"></path></g><g class="highcharts-grid highcharts-yaxis-grid "><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 315.7469020144043 333.6430355822068 L 693.9842172587864 413.8099360272282 M 156.98022035762764 359.57264401955985 L 315.7469020144043 333.6430355822068" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 315.3031494798663 278.8716504394082 L 696.0698250332293 340.6039754746151 M 155.55679708315932 298.8141555375116 L 315.3031494798663 278.8716504394082" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 314.8546977960663 223.52025978895492 L 698.185236031446 266.3519056532129 M 154.11660092478866 237.33972044163986 L 314.8546977960663 223.52025978895492" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 314.4014719227154 167.57960157542098 L 700.33109368042 191.03114192798773 M 152.6593336609839 175.13660921583786 L 314.4014719227154 167.57960157542098" opacity="1"></path><path fill="none" stroke="#707073" stroke-width="1" class="highcharts-grid-line" d="M 313.9372544005738 110.28226867856216 L 702.5372995052803 113.59212459942862 M 151.16490924552667 111.34745369021488 L 313.9372544005738 110.28226867856216" opacity="1"></path></g><rect fill="none" class="highcharts-plot-border" x="100" y="100" width="600" height="300"></rect><g class="highcharts-axis highcharts-xaxis "><path fill="none" class="highcharts-axis-line" stroke="#707073" stroke-width="1" d="M 0 0"></path></g><g class="highcharts-axis highcharts-zaxis "><path fill="none" class="highcharts-axis-line" d="M 0 0"></path></g><g class="highcharts-axis highcharts-yaxis "><path fill="none" class="highcharts-tick" stroke="#707073" stroke-width="1" d="M 156.98022035762764 359.57264401955985 L 148.78352887769552 359.57264401955985" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#707073" stroke-width="1" d="M 155.55679708315932 298.8141555375116 L 147.31209567809543 298.8141555375116" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#707073" stroke-width="1" d="M 154.11660092478866 237.33972044163986 L 145.82332387045818 237.33972044163986" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#707073" stroke-width="1" d="M 152.6593336609839 175.13660921583786 L 144.31690517468854 175.13660921583786" opacity="1"></path><path fill="none" class="highcharts-tick" stroke="#707073" stroke-width="1" d="M 151.16490924552667 111.34745369021488 L 142.77207607245396 111.34745369021488" opacity="1"></path><path fill="none" class="highcharts-axis-line" d="M 0 0"></path></g><g class="highcharts-series-group"><g class="highcharts-series highcharts-series-0 highcharts-scatter3d-series  highcharts-tracker" transform="translate(100,100) scale(1 1)" clip-path="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-2)"></g><g class="highcharts-markers highcharts-series-0 highcharts-scatter3d-series  highcharts-tracker" transform="translate(100,100) scale(1 1)" clip-path="none"><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" visibility="visible" d="M 424 42.17366730753406 A 10 10 0 1 1 423.9999950000004 42.16366730920072 Z" class="highcharts-halo highcharts-color-3" fill-opacity="0.25"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 204 146.8366933899529 A 4 4 0 1 1 203.99999800000018 146.83269339061957 Z" class="highcharts-point highcharts-color-8"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 175 217.98055388049949 A 4 4 0 1 1 174.99999800000018 217.97655388116615 Z" class="highcharts-point highcharts-color-8"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 144 222.57245231064013 A 4 4 0 1 1 143.99999800000018 222.5684523113068 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 127 201.62911355864327 A 4 4 0 1 1 126.99999800000016 201.62511355930994 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 220 180.11060530938585 A 4 4 0 1 1 219.99999800000018 180.10660531005252 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 274 132.45038910142344 A 4 4 0 1 1 273.9999980000002 132.4463891020901 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 274 132.45038910142344 A 4 4 0 1 1 273.9999980000002 132.4463891020901 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 205 229.8039480645066 A 4 4 0 1 1 204.99999800000018 229.79994806517328 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 204 205.99496986075926 A 4 4 0 1 1 203.99999800000018 205.99096986142592 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 164 108.47868402287449 A 4 4 0 1 1 163.99999800000018 108.47468402354116 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 259 158.03729570115513 A 4 4 0 1 1 258.9999980000002 158.0332957018218 Z" class="highcharts-point highcharts-color-3"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 150 229.8202555592975 A 4 4 0 1 1 149.99999800000018 229.81625555996416 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 149 182.08972610289948 A 4 4 0 1 1 148.99999800000018 182.08572610356615 Z" class="highcharts-point highcharts-color-2"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 244 232.3149147658274 A 4 4 0 1 1 243.99999800000018 232.31091476649408 Z" class="highcharts-point highcharts-color-3"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 259 60.816291091785146 A 4 4 0 1 1 258.9999980000002 60.81229109245181 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 188 184.0865473535286 A 4 4 0 1 1 187.99999800000018 184.08254735419527 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 203 60.82062616792227 A 4 4 0 1 1 202.99999800000018 60.81662616858893 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 259 36.22839949378408 A 4 4 0 1 1 258.9999980000002 36.22439949445074 Z" class="highcharts-point highcharts-color-8"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 92 109.6748467779425 A 4 4 0 1 1 91.99999800000016 109.67084677860917 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 229 234.8986312898318 A 4 4 0 1 1 228.99999800000018 234.89463129049847 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 244 86.23489924637659 A 4 4 0 1 1 243.99999800000018 86.23089924704325 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 243 61.488339784004154 A 4 4 0 1 1 242.99999800000018 61.484339784670816 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 285 112.0996555884526 A 4 4 0 1 1 284.9999980000002 112.09565558911927 Z" class="highcharts-point highcharts-color-3"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 270 237.52327860261602 A 4 4 0 1 1 269.9999980000002 237.5192786032827 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 156 237.5581335481146 A 4 4 0 1 1 155.99999800000018 237.55413354878127 Z" class="highcharts-point highcharts-color-8"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 155 188.2429595507097 A 4 4 0 1 1 154.99999800000018 188.23895955137638 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 155 188.2429595507097 A 4 4 0 1 1 154.99999800000018 188.23895955137638 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 269 113.36983129062924 A 4 4 0 1 1 268.9999980000002 113.3658312912959 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 269 113.36983129062924 A 4 4 0 1 1 268.9999980000002 113.3658312912959 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 227 37.031387862323484 A 4 4 0 1 1 226.99999800000018 37.027387862990146 Z" class="highcharts-point highcharts-color-2"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 212 113.37821127566912 A 4 4 0 1 1 211.99999800000018 113.37421127633579 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 327 62.869464136035575 A 4 4 0 1 1 326.9999980000002 62.865464136702236 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 56 87.21997230775006 A 4 4 0 1 1 55.99999800000017 87.21597230841672 Z" class="highcharts-point highcharts-color-2"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 113 37.03674532993533 A 4 4 0 1 1 112.99999800000016 37.03274533060199 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 154 88.1954562953321 A 4 4 0 1 1 153.99999800000018 88.19145629599876 Z" class="highcharts-point highcharts-color-8"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 269 37.44400622202427 A 4 4 0 1 1 268.9999980000002 37.44000622269093 Z" class="highcharts-point highcharts-color-2"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 121 243.0262575366802 A 4 4 0 1 1 120.99999800000016 243.02225753734686 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 178 141.65584583570526 A 4 4 0 1 1 177.99999800000018 141.65184583637193 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 296 90.22095880189907 A 4 4 0 1 1 295.9999980000002 90.21695880256574 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 163 271.1553358082866 A 4 4 0 1 1 162.99999800000018 271.15133580895326 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 339 169.09755054392178 A 4 4 0 1 1 338.9999980000002 169.09355054458845 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 119 116.01686187067246 A 4 4 0 1 1 118.99999800000016 116.01286187133913 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 178 64.33450483160644 A 4 4 0 1 1 177.99999800000018 64.3305048322731 Z" class="highcharts-point highcharts-color-8"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 221 143.30590574733952 A 4 4 0 1 1 220.99999800000018 143.3019057480062 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 355 38.29821441820175 A 4 4 0 1 1 354.9999980000002 38.294214418868414 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 355 38.29821441820175 A 4 4 0 1 1 354.9999980000002 38.294214418868414 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 384 222.92900144014527 A 4 4 0 1 1 383.9999980000002 222.92500144081194 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 161 117.36970246740538 A 4 4 0 1 1 160.99999800000018 117.36570246807204 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 220 38.74930656913118 A 4 4 0 1 1 219.99999800000018 38.74530656979784 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 324 118.73633148138452 A 4 4 0 1 1 323.9999980000002 118.7323314820512 Z" class="highcharts-point highcharts-color-8"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 308 251.64105360755832 A 4 4 0 1 1 307.9999980000002 251.637053608225 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 385 92.34989606340261 A 4 4 0 1 1 384.9999980000002 92.34589606406928 Z" class="highcharts-point highcharts-color-3"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 187 173.17934613798855 A 4 4 0 1 1 186.99999800000018 173.17534613865521 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 126 173.19289368765317 A 4 4 0 1 1 125.99999800000016 173.18889368831984 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 292 228.33717402503447 A 4 4 0 1 1 291.9999980000002 228.33317402570114 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 353 228.31916714598964 A 4 4 0 1 1 352.9999980000002 228.3151671466563 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 170 254.71735692458913 A 4 4 0 1 1 169.99999800000018 254.7133569252558 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 230 175.26771149159163 A 4 4 0 1 1 229.99999800000018 175.2637114922583 Z" class="highcharts-point highcharts-color-3"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 308 39.66647507966093 A 4 4 0 1 1 307.9999980000002 39.66247508032759 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 185 66.64594243644567 A 4 4 0 1 1 184.99999800000018 66.64194243711233 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 213 257.80845921936844 A 4 4 0 1 1 212.99999800000018 257.8044592200351 Z" class="highcharts-point highcharts-color-2"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 415 94.59036154955257 A 4 4 0 1 1 414.9999980000002 94.58636155021924 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 292 67.44542891301889 A 4 4 0 1 1 291.9999980000002 67.44142891368556 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 213 177.42156321510734 A 4 4 0 1 1 212.99999800000018 177.417563215774 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 213 177.42156321510734 A 4 4 0 1 1 212.99999800000018 177.417563215774 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 416 67.43473493509582 A 4 4 0 1 1 415.9999980000002 67.43073493576249 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 292 40.145113732289204 A 4 4 0 1 1 291.9999980000002 40.141113732955866 Z" class="highcharts-point highcharts-color-3"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 151 204.37160102925887 A 4 4 0 1 1 150.99999800000018 204.36760102992554 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 321 287.7922656841614 A 4 4 0 1 1 320.9999980000002 287.78826568482805 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 416 40.138793750950015 A 4 4 0 1 1 415.9999980000002 40.13479375161668 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 258 260.97579355236223 A 4 4 0 1 1 257.9999980000002 260.9717935530289 Z" class="highcharts-point highcharts-color-2"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 321 124.65099572427991 A 4 4 0 1 1 320.9999980000002 124.64699572494658 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 241 291.41129997128587 A 4 4 0 1 1 240.99999800000018 291.4072999719525 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 241 291.41129997128587 A 4 4 0 1 1 240.99999800000018 291.4072999719525 Z" class="highcharts-point highcharts-color-8"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 258 96.96710608022832 A 4 4 0 1 1 257.9999980000002 96.96310608089499 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 257 69.12671028947123 A 4 4 0 1 1 256.9999980000002 69.1227102901379 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 385 69.11546877309456 A 4 4 0 1 1 384.9999980000002 69.11146877376123 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 321 41.13546876819484 A 4 4 0 1 1 320.9999980000002 41.1314687688615 Z" class="highcharts-point highcharts-color-2"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 448 69.10984940491353 A 4 4 0 1 1 447.9999980000002 69.1058494055802 Z" class="highcharts-point highcharts-color-4"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 176 154.14390236262764 A 4 4 0 1 1 175.99999800000018 154.1399023632943 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 223 212.14665099415564 A 4 4 0 1 1 222.99999800000018 212.1426509948223 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 335 214.8480029617638 A 4 4 0 1 1 334.9999980000002 214.84400296243047 Z" class="highcharts-point highcharts-color-3"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 221 70.89521199024547 A 4 4 0 1 1 220.99999800000018 70.89121199091214 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 221 42.18415821803633 A 4 4 0 1 1 220.99999800000018 42.18015821870299 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 420 42.17366730753406 A 6 6 0 1 1 419.99999700000023 42.16766730853406 Z" class="highcharts-point highcharts-color-3 highcharts-point-hover" stroke="#333" stroke-width="1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 401 100.7162122972311 A 4 4 0 1 1 400.9999980000002 100.71221229789776 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 318 188.99330104941913 A 4 4 0 1 1 317.9999980000002 188.9893010500858 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-11)" d="M 367 278.108956306644 A 4 4 0 1 1 366.9999980000002 278.10495630731066 Z" class="highcharts-point highcharts-color-6"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 300 220.5396554046491 A 4 4 0 1 1 299.9999980000002 220.53565540531577 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 318 43.277982452238206 A 4 4 0 1 1 317.9999980000002 43.27398245290487 Z" class="highcharts-point highcharts-color-9"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" d="M 300 132.9384593636899 A 4 4 0 1 1 299.9999980000002 132.93445936435657 Z" class="highcharts-point highcharts-color-3"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 368 103.40058797109293 A 4 4 0 1 1 367.9999980000002 103.3965879717596 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-5)" d="M 232 103.41857098616393 A 4 4 0 1 1 231.99999800000018 103.4145709868306 Z" class="highcharts-point highcharts-color-0"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-10)" d="M 300 43.85073319122772 A 4 4 0 1 1 299.9999980000002 43.84673319189438 Z" class="highcharts-point highcharts-color-5"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-6)" d="M 263 314.97807145217274 A 4 4 0 1 1 262.9999980000002 314.9740714528394 Z" class="highcharts-point highcharts-color-1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-13)" d="M 314 229.64800230862173 A 4 4 0 1 1 313.9999980000002 229.6440023092884 Z" class="highcharts-point highcharts-color-8 " stroke-width="1"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 314 199.42900267065335 A 4 4 0 1 1 313.9999980000002 199.42500267132002 Z" class="highcharts-point highcharts-color-2"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-12)" d="M 314 138.461246917504 A 4 4 0 1 1 313.9999980000002 138.45724691817068 Z" class="highcharts-point highcharts-color-7"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-9)" d="M 295 293.59552776424874 A 4 4 0 1 1 294.9999980000002 293.5915277649154 Z" class="highcharts-point highcharts-color-10"></path><path fill="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-7)" d="M 295 46.301360549288745 A 4 4 0 1 1 294.9999980000002 46.29736054995541 Z" class="highcharts-point highcharts-color-2"></path></g></g><g class="highcharts-button highcharts-contextbutton highcharts-button-normal" style="cursor:pointer;" stroke-linecap="round" transform="translate(766,10)"><title>Chart context menu</title><rect fill="#505053" class=" highcharts-button-box" x="0.5" y="0.5" width="24" height="22" rx="2" ry="2" stroke="none" stroke-width="1"></rect><path fill="#666666" d="M 6 6.5 L 20 6.5 M 6 11.5 L 20 11.5 M 6 16.5 L 20 16.5" class="highcharts-button-symbol" stroke="#DDDDDD" stroke-width="3"></path><text x="0" style="font-weight:normal;color:#333333;fill:#333333;" y="12"></text></g><text x="400" text-anchor="middle" class="highcharts-title" style="color:#E0E0E3;font-size:20px;text-transform:uppercase;fill:#E0E0E3;" y="25"><tspan>Draggable box</tspan></text><text x="400" text-anchor="middle" class="highcharts-subtitle" style="color:#E0E0E3;text-transform:uppercase;fill:#E0E0E3;" y="47"><tspan>Click and drag the plot area to rotate in space</tspan></text><g class="highcharts-axis-labels highcharts-xaxis-labels "><text x="156.97078576134803" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="374.74424891094367" z="274.9463481946757" opacity="1">0</text><text x="213.6936547805865" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="391.2817309485516" z="188.0854637721285" opacity="1">2</text><text x="277.7091658155098" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="409.9453737115663" z="101.22457934958129" opacity="1">4</text><text x="350.52031678784147" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="431.1733743780012" z="14.36369492703409" opacity="1">6</text><text x="434.0735923867305" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="455.53322814229665" z="-72.49718949551317" opacity="1">8</text><text x="530.9355648940401" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="483.7732159666715" z="-159.3580739180603" opacity="1">10</text></g><g class="highcharts-axis-labels highcharts-zaxis-labels "><text x="0" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="-9999">0</text><text x="618.3594198336848" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="456.1046245290397" z="-74.39161581039286" opacity="1">5</text><text x="693.9980240145517" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="middle" transform="translate(0,0)" y="432.1659222442001" z="10.574842297274614" opacity="1">10</text></g><g class="highcharts-axis-labels highcharts-yaxis-labels "><text x="144.77435578427057" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="end" transform="translate(0,0)" y="363.1956592366731" z="275.5383680362081" opacity="1">0</text><text x="143.2799651065901" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="end" transform="translate(0,0)" y="302.4797292339093" z="266.65807041322057" opacity="1">2.5</text><text x="141.76797152452633" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="end" transform="translate(0,0)" y="241.048606928127" z="257.77777279023303" opacity="1">5</text><text x="140.2380621700562" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="end" transform="translate(0,0)" y="178.88958073508428" z="248.89747516724543" opacity="1">7.5</text><text x="138.689916716555" style="color:#E0E0E3;cursor:default;font-size:11px;fill:#E0E0E3;" text-anchor="end" transform="translate(0,0)" y="115.98963603335824" z="240.01717754425786" opacity="1">10</text></g><text x="790" class="highcharts-credits" text-anchor="end" style="cursor:pointer;color:#666;font-size:9px;fill:#666;" y="495">Highcharts.com</text><g class="highcharts-label highcharts-tooltip highcharts-color-3" style="cursor:default;pointer-events:none;white-space:nowrap;" transform="translate(484,51)" opacity="1" visibility="visible"><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 56.5 0.5 C 59.5 0.5 59.5 0.5 59.5 3.5 L 59.5 72.5 C 59.5 75.5 59.5 75.5 56.5 75.5 L 35.5 75.5 29.5 81.5 23.5 75.5 3.5 75.5 C 0.5 75.5 0.5 75.5 0.5 72.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.049999999999999996" stroke-width="5" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 56.5 0.5 C 59.5 0.5 59.5 0.5 59.5 3.5 L 59.5 72.5 C 59.5 75.5 59.5 75.5 56.5 75.5 L 35.5 75.5 29.5 81.5 23.5 75.5 3.5 75.5 C 0.5 75.5 0.5 75.5 0.5 72.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.09999999999999999" stroke-width="3" transform="translate(1, 1)"></path><path fill="none" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 56.5 0.5 C 59.5 0.5 59.5 0.5 59.5 3.5 L 59.5 72.5 C 59.5 75.5 59.5 75.5 56.5 75.5 L 35.5 75.5 29.5 81.5 23.5 75.5 3.5 75.5 C 0.5 75.5 0.5 75.5 0.5 72.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" isShadow="true" stroke="#000000" stroke-opacity="0.15" stroke-width="1" transform="translate(1, 1)"></path><path fill="rgba(0, 0, 0, 0.85)" class="highcharts-label-box highcharts-tooltip-box" d="M 3.5 0.5 L 56.5 0.5 C 59.5 0.5 59.5 0.5 59.5 3.5 L 59.5 72.5 C 59.5 75.5 59.5 75.5 56.5 75.5 L 35.5 75.5 29.5 81.5 23.5 75.5 3.5 75.5 C 0.5 75.5 0.5 75.5 0.5 72.5 L 0.5 3.5 C 0.5 0.5 0.5 0.5 3.5 0.5" stroke="url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)" stroke-width="1"></path><text x="8" style="font-size:12px;color:#F0F0F0;fill:#F0F0F0;" y="20"><tspan style="fill:url(https://www.highcharts.com/demo/3d-scatter-draggable/dark-unica#highcharts-1o7fv9u-8)">●</tspan><tspan style="font-size: 0.85em" dx="0"> Reading</tspan><tspan x="8" dy="15">x: </tspan><tspan style="font-weight:bold" dx="0">9</tspan><tspan x="8" dy="15">y: </tspan><tspan style="font-weight:bold" dx="0">9</tspan><tspan x="8" dy="15">z: </tspan><tspan style="font-weight:bold" dx="0">7</tspan></text></g><g stroke-linejoin="round" class="highcharts-3d-frame highcharts-3d-frame-front"><path fill="rgba(25,25,25,0.04)" d="M 156.54412519732006 359.8524418985529 L 530.9213516062547 463.11196512132506 L 530.9355648940401 461.9970496264316 L 156.97078576134803 359.16993049107487 Z" visibility="hidden"></path><path fill="rgba(25,25,25,0.04)" d="M 535.3435790538335 116.224603260436 L 150.72143991134226 111.76438067733113 L 151.17479999500367 111.76963801089994 L 535.3435790538335 116.224603260436 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.04)" d="M 150.72143991134226 111.76438067733113 L 156.54412519732006 359.8524418985529 L 156.97078576134803 359.16993049107487 L 151.17479999500367 111.76963801089994 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.04)" d="M 530.9213516062547 463.11196512132506 L 535.3435790538335 116.224603260436 L 535.3435790538335 116.224603260436 L 530.9355648940401 461.9970496264316 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.04)" d="M 535.3435790538335 116.224603260436 L 151.17479999500367 111.76963801089994 L 156.97078576134803 359.16993049107487 L 530.9355648940401 461.9970496264316 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.04)" d="M 530.9213516062547 463.11196512132506 L 156.54412519732006 359.8524418985529 L 150.72143991134226 111.76438067733113 L 535.3435790538335 116.224603260436 Z" visibility="hidden"></path></g><g stroke-linejoin="round" class="highcharts-3d-frame highcharts-3d-frame-top"><path fill="rgba(25,25,25,0.02)" d="M 314.0464917973087 110.65304531457105 L 703.0983153043635 114.09801230124 L 535.3435790538335 116.224603260436 L 150.72143991134226 111.76438067733113 Z" visibility="hidden"></path><path fill="rgba(25,25,25,0.02)" d="M 151.17479999500367 111.76963801089994 L 535.3435790538335 116.224603260436 L 702.5226790775264 114.10530951873227 L 313.9403249164445 110.66125560089489 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.02)" d="M 314.0464917973087 110.65304531457105 L 150.72143991134226 111.76438067733113 L 151.17479999500367 111.76963801089994 L 313.9403249164445 110.66125560089489 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.02)" d="M 535.3435790538335 116.224603260436 L 703.0983153043635 114.09801230124 L 702.5226790775264 114.10530951873227 L 535.3435790538335 116.224603260436 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.02)" d="M 150.72143991134226 111.76438067733113 L 535.3435790538335 116.224603260436 L 535.3435790538335 116.224603260436 L 151.17479999500367 111.76963801089994 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.02)" d="M 703.0983153043635 114.09801230124 L 314.0464917973087 110.65304531457105 L 313.9403249164445 110.66125560089489 L 702.5226790775264 114.10530951873227 Z" visibility="hidden"></path></g><g stroke-linejoin="round" class="highcharts-3d-frame highcharts-3d-frame-right"><path fill="rgba(25,25,25,0.06)" d="M 694.5343923188259 414.12565739471245 L 693.9980240145517 413.3253114346761 L 530.9355648940401 461.9970496264316 L 530.9213516062547 463.11196512132506 Z" visibility="hidden"></path><path fill="rgba(25,25,25,0.06)" d="M 535.3435790538335 116.224603260436 L 535.3435790538335 116.224603260436 L 702.5226790775264 114.10530951873227 L 703.0983153043635 114.09801230124 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.06)" d="M 535.3435790538335 116.224603260436 L 530.9355648940401 461.9970496264316 L 693.9980240145517 413.3253114346761 L 702.5226790775264 114.10530951873227 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.06)" d="M 530.9213516062547 463.11196512132506 L 535.3435790538335 116.224603260436 L 703.0983153043635 114.09801230124 L 694.5343923188259 414.12565739471245 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.06)" d="M 535.3435790538335 116.224603260436 L 530.9213516062547 463.11196512132506 L 530.9355648940401 461.9970496264316 L 535.3435790538335 116.224603260436 Z" visibility="hidden"></path><path fill="rgba(0,0,0,0.06)" d="M 694.5343923188259 414.12565739471245 L 703.0983153043635 114.09801230124 L 702.5226790775264 114.10530951873227 L 693.9980240145517 413.3253114346761 Z" visibility="hidden"></path></g></svg><div class="highcharts-contextmenu" style="position: absolute; z-index: 1000; padding: 24px; display: none; right: -14px; top: 8px;"><div class="highcharts-menu" style="box-shadow: rgb(136, 136, 136) 3px 3px 10px; border: 1px solid rgb(153, 153, 153); background: rgb(255, 255, 255); padding: 5px 0px;"><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">Print chart</div><hr><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">Download PNG image</div><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">Download JPEG image</div><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">Download PDF document</div><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">Download SVG vector image</div><hr><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">Download CSV</div><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">Download XLS</div><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">View data table</div><div class="highcharts-menu-item" style="cursor: pointer; padding: 0.5em 1em; background: none; color: rgb(51, 51, 51); font-size: 11px; transition: background 250ms, color 250ms;">Open in Highcharts Cloud</div></div></div></div></div>			<!--[if lt IE 9]>
+		   	<script src="https://code.highcharts.com/modules/oldie.js"></script>
+		   <![endif]-->
+						<script src="./3D scatter chart _ Highcharts_files/dark-unica.js.Без названия"></script>
+						<script>
+				jQuery.noConflict();
+				var example = '3d-scatter-draggable', 
+					theme = 'dark-unica';
+				(function($){ // encapsulate jQuery
+					// Give the points a 3D feel by adding a radial gradient
+Highcharts.setOptions({
+    colors: $.map(Highcharts.getOptions().colors, function (color) {
+        return {
+            radialGradient: {
+                cx: 0.4,
+                cy: 0.3,
+                r: 0.5
+            },
+            stops: [
+                [0, color],
+                [1, Highcharts.Color(color).brighten(-0.2).get('rgb')]
+            ]
+        };
+    })
+});
+
+// Set up the chart
+var chart = new Highcharts.Chart({
+    chart: {
+        renderTo: 'container',
+        margin: 100,
+        type: 'scatter3d',
+        animation: false,
+        options3d: {
+            enabled: true,
+            alpha: 10,
+            beta: 30,
+            depth: 250,
+            viewDistance: 5,
+            fitToPlot: false,
+            frame: {
+                bottom: { size: 1, color: 'rgba(0,0,0,0.02)' },
+                back: { size: 1, color: 'rgba(0,0,0,0.04)' },
+                side: { size: 1, color: 'rgba(0,0,0,0.06)' }
+            }
+        }
+    },
+    title: {
+        text: 'Draggable box'
+    },
+    subtitle: {
+        text: 'Click and drag the plot area to rotate in space'
+    },
+    plotOptions: {
+        scatter: {
+            width: 10,
+            height: 10,
+            depth: 10
+        }
+    },
+    yAxis: {
+        min: 0,
+        max: 10,
+        title: null
+    },
+    xAxis: {
+        min: 0,
+        max: 10,
+        gridLineWidth: 1
+    },
+    zAxis: {
+        min: 0,
+        max: 10,
+        showFirstLabel: false
+    },
+    legend: {
+        enabled: false
+    },
+    series: [{
+        name: 'Reading',
+        colorByPoint: true,
+        data: [
+            [1, 6, 5], [8, 7, 9], [1, 3, 4], [4, 6, 8], [5, 7, 7], [6, 9, 6],
+            [7, 0, 5], [2, 3, 3], [3, 9, 8], [3, 6, 5], [4, 9, 4], [2, 3, 3],
+            [6, 9, 9], [0, 7, 0], [7, 7, 9], [7, 2, 9], [0, 6, 2], [4, 6, 7],
+            [3, 7, 7], [0, 1, 7], [2, 8, 6], [2, 3, 7], [6, 4, 8], [3, 5, 9],
+            [7, 9, 5], [3, 1, 7], [4, 4, 2], [3, 6, 2], [3, 1, 6], [6, 8, 5],
+            [6, 6, 7], [4, 1, 1], [7, 2, 7], [7, 7, 0], [8, 8, 9], [9, 4, 1],
+            [8, 3, 4], [9, 8, 9], [3, 5, 3], [0, 2, 4], [6, 0, 2], [2, 1, 3],
+            [5, 8, 9], [2, 1, 1], [9, 7, 6], [3, 0, 2], [9, 9, 0], [3, 4, 8],
+            [2, 6, 1], [8, 9, 2], [7, 6, 5], [6, 3, 1], [9, 3, 1], [8, 9, 3],
+            [9, 1, 0], [3, 8, 7], [8, 0, 0], [4, 9, 7], [8, 6, 2], [4, 3, 0],
+            [2, 3, 5], [9, 1, 4], [1, 1, 4], [6, 0, 2], [6, 1, 6], [3, 8, 8],
+            [8, 8, 7], [5, 5, 0], [3, 9, 6], [5, 4, 3], [6, 8, 3], [0, 1, 5],
+            [6, 7, 3], [8, 3, 2], [3, 8, 3], [2, 1, 6], [4, 6, 7], [8, 9, 9],
+            [5, 4, 2], [6, 1, 3], [6, 9, 5], [4, 8, 2], [9, 7, 4], [5, 4, 2],
+            [9, 6, 1], [2, 7, 3], [4, 5, 4], [6, 8, 1], [3, 4, 0], [2, 2, 6],
+            [5, 1, 2], [9, 9, 7], [6, 9, 9], [8, 4, 3], [4, 1, 7], [6, 2, 5],
+            [0, 4, 9], [3, 5, 9], [6, 9, 1], [1, 9, 2]]
+    }]
+});
+
+
+// Add mouse and touch events for rotation
+(function (H) {
+    function dragStart(eStart) {
+        eStart = chart.pointer.normalize(eStart);
+
+        var posX = eStart.chartX,
+            posY = eStart.chartY,
+            alpha = chart.options.chart.options3d.alpha,
+            beta = chart.options.chart.options3d.beta,
+            sensitivity = 5; // lower is more sensitive
+
+        function drag(e) {
+            // Get e.chartX and e.chartY
+            e = chart.pointer.normalize(e);
+
+            chart.update({
+                chart: {
+                    options3d: {
+                        alpha: alpha + (e.chartY - posY) / sensitivity,
+                        beta: beta + (posX - e.chartX) / sensitivity
+                    }
+                }
+            }, undefined, undefined, false);
+        }
+
+        chart.unbindDragMouse = H.addEvent(document, 'mousemove', drag);
+        chart.unbindDragTouch = H.addEvent(document, 'touchmove', drag);
+
+        H.addEvent(document, 'mouseup', chart.unbindDragMouse);
+        H.addEvent(document, 'touchend', chart.unbindDragTouch);
+    }
+    H.addEvent(chart.container, 'mousedown', dragStart);
+    H.addEvent(chart.container, 'touchstart', dragStart);
+}(Highcharts));
+				})(jQuery);
+			</script>
+							<a id="next-example" class="hidden-xs" title="Next (arrow right)" href="https://www.highcharts.com/demo/gauge-speedometer/dark-unica"><i class="fa fa-angle-right"></i></a>
+					</div>
+		<div id="demo-buttons">
+
+												<button type="button" class="button" data-toggle="modal" data-target="#jsCode">View options <i class="fa fa-chevron-right"></i></button>
+																							<button type="button" class="button" data-toggle="modal" data-target="#themeCode">View visual theme <i class="fa fa-chevron-right"></i></button>
+							
+									<a class="button" id="jsfiddle" href="https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/3d-scatter-draggable/" onclick="trackOutboundLink(&#39;https://jsfiddle.net/gh/get/library/pure/highcharts/highcharts/tree/master/samples/highcharts/demo/3d-scatter-draggable/&#39;); return false;" target="_new">Edit in jsFiddle <i class="fa fa-chevron-right"></i></a>
+
+			<a class="button" id="codepen" href="https://www.highcharts.com/samples/codepen/highcharts/demo/3d-scatter-draggable" target="_new">
+				Edit in CodePen <i class="fa fa-chevron-right"></i>
+			</a>
+			<a class="button" id="open-in-cloud" style="cursor: pointer;" href="javascript:Highcharts.charts[0].openInCloud();">Edit in Highcharts Cloud <i class="fa fa-chevron-right"></i></a>
+					</div>
+	</div>
+	<div class="col-lg-9 col-md-9 col-sm-9 col-xs-12 sidebar-eq-fill"></div>
+	<div class="clearfix"></div>
+</div>
+
+			</div>
+					</div>
+		<div>
+		   
+		</div>
+				<div id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">								
+						<div id="zt-footer-copy">
+							© 2018 Highcharts. All rights reserved.						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+						<div class="socials">
+															<div>
+<a href="https://www.facebook.com/Highcharts" title="Facebook" class="social-icon"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/Highcharts" title="Twitter" class="social-icon"><i class="fa fa-twitter"></i></a>
+<a href="http://www.linkedin.com/company/highsoft-solutions-as" title="LinkedIn" class="social-icon"><i class="fa fa-linkedin"></i></a>
+<a href="https://github.com/highcharts" title="Github" class="social-icon"><i class="fa fa-github"></i></a>
+<a href="https://www.youtube.com/channel/UCzxXofPTQ0DoT7uIy3Fxw7A"><i class="fa fa-youtube"></i></a>
+</div>
+
+													</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+
+</body></html>
